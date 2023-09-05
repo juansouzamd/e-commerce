@@ -724,6 +724,10 @@ footer a:hover {
     z-index: -9;
 }
 
+.decoration {
+    text-decoration: none;
+}
+
 
 /* About Page */
 
