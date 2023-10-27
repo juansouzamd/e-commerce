@@ -42,19 +42,20 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+           <!-- Formulário de Criação de Conta -->
+          <form action="/create-user" class="sign-up-form" method="post">
             <h2 class="title">Criar conta</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nome" />
+              <input type="text" placeholder="Nome" name="user-name" id="user-name"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="E-mail" />
+              <input type="email" placeholder="E-mail" name="user-email" id="user-email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input type="password" placeholder="Senha" name="user-senha" id="user-senha"/>
             </div>
             <input type="submit" class="btn" value="Continuar" />
             <p class="social-text">Ou registre-se com as redes sociais</p>
@@ -73,6 +74,7 @@
               </a>
             </div>
           </form>
+          <!-- Fim Formulário de Criação de Conta -->
         </div>
       </div>
 
