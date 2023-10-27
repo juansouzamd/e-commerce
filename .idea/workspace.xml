@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77b20d6d-d397-47d3-84a6-69d25a147ec7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/paginaLogin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styleFav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-central.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-jordanwmn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-nike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-principal.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-puma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-secundario01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/banner/banner-secundario02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/caracteristicas/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/caracteristicas/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/caracteristicas/f3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/caracteristicas/f4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/caracteristicas/f5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/caracteristicas/f6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/equipe/luigi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/equipe/mario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/equipe/rosalina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/favoritos/jordanLovers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/favoritos/nikeLovers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/login/tenis01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/login/tenis02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/pagamentos/app.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/pagamentos/pay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/pagamentos/play.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors02.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors03.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors04.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers01.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers02.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers03.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers04.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets01.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets02.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets03.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets04.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies01.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies02.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies03.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies04.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/LeBron NXXT Gen/LeBron NXXT Gen01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/LeBron NXXT Gen/LeBron NXXT Gen02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/LeBron NXXT Gen/LeBron NXXT Gen03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/LeBron NXXT Gen/LeBron NXXT Gen04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/LeBron NXXT Gen/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Jordan MVP Masculino/Tênis Jordan MVP Masculino01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Jordan MVP Masculino/Tênis Jordan MVP Masculino02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Jordan MVP Masculino/Tênis Jordan MVP Masculino03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Jordan MVP Masculino/Tênis Jordan MVP Masculino04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Jordan MVP Masculino/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Air Force 1 '07 Masculino/Tênis Nike Air Force01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Air Force 1 '07 Masculino/Tênis Nike Air Force02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Air Force 1 '07 Masculino/Tênis Nike Air Force03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Air Force 1 '07 Masculino/Tênis Nike Air Force04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Air Force 1 '07 Masculino/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Giannis Immortality 3 Masculino/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 FlyEase Masculino/Tênis Nike Precision 6 FlyEase Masculino01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 FlyEase Masculino/Tênis Nike Precision 6 FlyEase Masculino02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 FlyEase Masculino/Tênis Nike Precision 6 FlyEase Masculino03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 FlyEase Masculino/Tênis Nike Precision 6 FlyEase Masculino04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 FlyEase Masculino/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/descrição.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/MER Banco de dados.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-principal10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-produto01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-produto02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-produto03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-produto04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readme/pagina-produto05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/produto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carrinho.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contato.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favoritos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paginaLogin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/produto.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2XBoJ0ARuKCS1ALQvRJoFor2TNA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/maria.santos/repos/e-commerce",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="e-commerce" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="e-commerce" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77b20d6d-d397-47d3-84a6-69d25a147ec7" name="Changes" comment="" />
+      <created>1698111761926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698111761926</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/CreateUser.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/CreateUser.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

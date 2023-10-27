@@ -15,16 +15,16 @@
 <body>
 
     <section id="header">
-        <a href="index.html"><img src="assets/img/front-end/logo.png" class="logo" alt=""></a>
+        <a href="index.jsp"><img src="assets/img/front-end/logo.png" class="logo" alt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="contato.jsp">Contato</a></li>
                 <li id="lg-bag"><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li id="lg-bag"><a href="carrinho.html"><i class="far fa-shopping-bag"></i></a></li>
-                <li id="lg-bag"><a href="paginaLogin.html"><i class="fas fa-user"></i></a></li>
+                <li id="lg-bag"><a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="paginaLogin.jsp"><i class="fas fa-user"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -38,79 +38,67 @@
 
     <section id="page-header" class="about-header">
 
-        <h2>#carrinho</h2>
-        <p>adicione seu cupon e tenha até 70% de desconto!</p>
+        <h2>#CUREATE</h2>
+        <p>Deixe sua mensagem, adoramos ouvir você!</p>
 
     </section>
 
-    <section id="cart" class="section-p1">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remover</td>
-                    <td>Imagem</td>
-                    <td>Produto</td>
-                    <td>Preço</td>
-                    <td>Quantidade</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png" alt=""></td>
-                    <td>Air Jordan 1 Retro High</td>
-                    <td>R$999,99</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>R$999,99</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp" alt=""></td>
-                    <td>Regata NBA Golden State Warriors</td>
-                    <td>R$699,99</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>R$699,99</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino01.png" alt=""></td>
-                    <td>Tênis Nike LeBron 20</td>
-                    <td>R$1299,99</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>R$1299,99</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section id="cart-add" class="section-p1">
-        <div id="cuopon">
-            <h3>Aplicar cupon</h3>
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>Entre em contato</span>
+            <h2>Visite uma de nossas lojas, ou entre em contato conosco hoje</h2>
+            <h3>Nossa Sede</h3>
             <div>
-                <input type="text" name="" id="" placeholder="Entre com seu cupon">
-                <button class="normal">Aplicar</button>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>Av. Eng. Eusébio Stevaux, 823 - Santo Amaro</p>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <p>contato@cureate.com </p>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <p>11 99999-9999 </p>
+                </li>
             </div>
         </div>
 
-        <div id="subtotal">
-            <h3>Total carrinho</h3>
-            <table>
-                <tr>
-                    <td>Carrinho Subtotal</td>
-                    <td>R$ 2.999,97</td>
-                </tr>
-                <tr>
-                    <td>Frete</td>
-                    <td>Grátis</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>R$ 2.999,97</strong></td>
-                </tr>
-            </table>
-            <button class="normal">Comprar</button>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7100.350069893412!2d-46.710366655438044!3d-23.668678346351356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce515bb231b5ed%3A0x327b78892baef8e6!2zU2VuYWMgTmHDp8O1ZXMgVW5pZGFz!5e0!3m2!1spt-BR!2sbr!4v1696121342000!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="form-details">
+        <form action="">
+            <span>DEIXE SUA MENSAGEM</span>
+            <h2>Nós gostamos de ouvir você </h2>
+            <input type="text" name="" id="" placeholder="Nome">
+            <input type="text" name="" id="" placeholder="E-mail">
+            <input type="text" name="" id="" placeholder="Assunto">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <button class="normal">Enviar</button>
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="assets/img/front-end/equipe/mario.png" alt="">
+                <p><span>Mario Bros </span> CEO (Chief Executive Officer) <br> Telefone: 11 99999 - 9999 <br> Email:
+                    mario@cureate.com</p>
+            </div>
+            <div>
+                <img src="assets/img/front-end/equipe/luigi.png" alt="">
+                <p><span>Luigi Bros</span> CTO (Chief Technology Officer) <br> Telefone: 11 99999 - 9999 <br> Email:
+                    luigi@cureate.com</p>
+            </div>
+            <div>
+                <img src="assets/img/front-end/equipe/rosalina.png" alt="">
+                <p><span>Rosalina Luma</span> Senior Marketing Manager <br> Telefone: 11 99999 - 9999 <br> Email:
+                    rosalina@cureate.com</p>
+            </div>
         </div>
     </section>
 
