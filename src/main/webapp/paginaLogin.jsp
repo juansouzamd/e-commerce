@@ -63,6 +63,11 @@
             </div>
 
             <div class="input-field">
+              <i class="fas fa-calendar"></i>
+              <input type="data-nasc" placeholder="Data Nascimento" name="user-data_nasc" id="user-data_nasc"/>
+            </div>
+
+            <div class="input-field">
               <i class="fas fa-envelope"></i>
               <input type="email" placeholder="E-mail" name="user-email" id="user-email"/>
             </div>
@@ -71,21 +76,6 @@
               <input type="password" placeholder="Senha" name="user-senha" id="user-senha"/>
             </div>
             <input type="submit" class="btn" value="Continuar" />
-            <p class="social-text">Ou registre-se com as redes sociais</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
           </form>
           <!-- Fim Formulário de Criação de Conta -->
         </div>
