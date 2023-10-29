@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -49,6 +51,17 @@
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Nome" name="user-name" id="user-name"/>
             </div>
+
+            <div class="input-field">
+              <i class="fas fa-file"></i>
+              <input type="cpf" placeholder="Cpf" name="user-cpf" id="user-cpf"/>
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-phone"></i>
+              <input type="telefone" placeholder="Telefone" name="user-telefone" id="user-telefone"/>
+            </div>
+
             <div class="input-field">
               <i class="fas fa-envelope"></i>
               <input type="email" placeholder="E-mail" name="user-email" id="user-email"/>
