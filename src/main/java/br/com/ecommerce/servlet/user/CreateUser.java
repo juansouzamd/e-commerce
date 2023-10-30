@@ -1,7 +1,7 @@
-package br.com.ecommerce.servlet;
+package br.com.ecommerce.servlet.user;
 
 import br.com.ecommerce.dao.UserDao;
-import br.com.ecommerce.model.Usuario;
+import br.com.ecommerce.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,17 +16,13 @@ public class CreateUser extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDao userDao = new UserDao();
-
-        String nome = request.getParameter("user-name");
-        String email = request.getParameter("user-email");
-        String senha = request.getParameter("user-senha");
-
-        System.out.println(nome);
-
-        Usuario user = new Usuario();
-        user.setNome(nome);
-        user.setEmail(email);
-        user.setSenha(senha);
+        User user = new User();
+        user.setNome(request.getParameter("user-name"));
+        user.setEmail(request.getParameter("user-email"));
+        user.setSenha(request.getParameter("user-senha"));
+        user.setCpf(request.getParameter("user-cpf"));
+        user.setDataNascimento(request.getParameter("user-cpf"));
+        user.setTelefone(request.getParameter("user-data_nasc"));
 
         userDao.createUser(user);
         request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);

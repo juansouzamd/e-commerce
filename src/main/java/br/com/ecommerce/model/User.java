@@ -1,7 +1,17 @@
 package br.com.ecommerce.model;
 
-public class Usuario {
+public class User {
+
+    public User() {}
+
+    public User(String email, String senha)
+    {
+        this.email = email;
+        this.senha = senha;
+    }
+
     private int id;
+    private String nome;
     private String email;
     private String senha;
     private String cpf;
@@ -16,7 +26,6 @@ public class Usuario {
         this.nome = nome;
     }
 
-    private String nome;
 
     public int getId() {
         return id;
@@ -65,9 +74,5 @@ public class Usuario {
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-
-
-
-
 
 }

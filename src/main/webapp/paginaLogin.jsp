@@ -17,17 +17,17 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="/login" class="sign-in-form"  method="post">
             <h2 class="title">Fazer login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="E-mail" />
+              <input type="text" placeholder="E-mail" name="user-email" id="user-email />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input type="password" placeholder="Senha" name="user-senha" id="user-senha"/>
             </div>
-            <input type="submit" value="Continuar" class="btn solid" />
+            <input type="submit" class="btn" value="Entrar" />
             <p class="social-text">Ou faça login com as redes sociais</p>
             <div class="social-media">
               <a href="#" class="social-icon">
