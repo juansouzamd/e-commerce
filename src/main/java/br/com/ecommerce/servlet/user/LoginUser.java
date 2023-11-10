@@ -38,7 +38,7 @@ public class LoginUser extends HttpServlet {
 
             req.setAttribute("message", "Invalid credentials!");
 
-            req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
+            req.getRequestDispatcher("index.jsp").forward(req, resp);
 
         }
 

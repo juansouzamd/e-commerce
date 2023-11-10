@@ -22,7 +22,7 @@
         <div>
             <ul id="navbar">
                 <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="dashboard.jsp">Sobre</a></li>
                 <li><a href="contato.jsp">Contato</a></li>
                 <li id="lg-bag"><a href="#"><i class="fas fa-heart"></i></a></li>
                 <li id="lg-bag"><a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a></li>

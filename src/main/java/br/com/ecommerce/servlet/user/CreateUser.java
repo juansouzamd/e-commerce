@@ -23,7 +23,7 @@ public class CreateUser extends HttpServlet{
         user.setCpf(request.getParameter("user-cpf"));
         user.setDataNascimento(request.getParameter("user-cpf"));
         user.setTelefone(request.getParameter("user-data_nasc"));
-
+        System.out.println("servelet create user");
         userDao.createUser(user);
         request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
 
