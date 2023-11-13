@@ -1227,14 +1227,15 @@ footer a:hover {
 
 .header {
     background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+
 }
 
 
 .p {
-    margin: 10px 0 0;
+    font-size: 30px;
+    color: white;
 }
 
 .about,
@@ -1250,4 +1251,27 @@ footer a:hover {
 .about h2,
 .mission h2 {
     color: #333;
+}
+
+.pessoa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diretores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.img {
+    width: 50%;
 }
