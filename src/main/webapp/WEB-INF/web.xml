@@ -3,6 +3,10 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 84a80dfc28dce5a2d85940e873d507e18b8e8f78
   <display-name>Archetype Created Web Application</display-name>
     <listener>
         <listener-class>org.h2.server.web.DbStarter</listener-class>

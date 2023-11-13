@@ -21,19 +21,24 @@
 
         <div>
             <ul id="navbar">
+<<<<<<< HEAD
                 <li><a href="#">Produtos</a></li>
                 <li><a href="create-car.jsp">Sobre</a></li>
+=======
+                <li><a href="index.jsp">Início</a></li>
+                <li><a href="sobre.jsp">Sobre</a></li>
+>>>>>>> 84a80dfc28dce5a2d85940e873d507e18b8e8f78
                 <li><a href="contato.jsp">Contato</a></li>
-                <li id="lg-bag"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li id="lg-bag"><a href="favoritos.jsp"><i class="fas fa-heart"></i></a></li>
                 <li id="lg-bag"><a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a></li>
                 <li id="lg-bag"><a href="paginaLogin.jsp"><i class="fas fa-user"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="#"><i class="fas fa-heart"></i></a>
-            <a href="#"><i class="far fa-shopping-bag"></i></a>
-            <a href="#"><i class="fas fa-user"></i></a>
+             <a href="favoritos.jsp"><i class="fas fa-heart"></i></a>
+            <a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a>
+            <a href="paginaLogin.jsp"><i class="fas fa-user"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
