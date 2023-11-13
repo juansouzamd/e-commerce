@@ -11,7 +11,7 @@
     <title>Cureate</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-    <link rel="stylesheet" href="assets/css/styleFav.css">
+    <link rel="stylesheet" href="assets/css/favoritos.css">
 </head>
 
 <body>
@@ -21,28 +21,26 @@
 
         <div>
             <ul id="navbar">
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="index.jsp">Início</a></li>
+                <li><a href="sobre.jsp">Sobre</a></li>
                 <li><a href="contato.jsp">Contato</a></li>
-                <li id="lg-bag"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li id="lg-bag"><a href="favoritos.jsp"><i class="fas fa-heart"></i></a></li>
                 <li id="lg-bag"><a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a></li>
                 <li id="lg-bag"><a href="paginaLogin.jsp"><i class="fas fa-user"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="#"><i class="fas fa-heart"></i></a>
-            <a href="#"><i class="far fa-shopping-bag"></i></a>
-            <a href="#"><i class="fas fa-user"></i></a>
+             <a href="favoritos.jsp"><i class="fas fa-heart"></i></a>
+            <a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a>
+            <a href="paginaLogin.jsp"><i class="fas fa-user"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
-    <section id="hero">
-    </section>
-
     <section id="product1" class="section-p1">
-        <h2>Seus Favoritos, mas que todos amamos! <i class="fas fa-heart"></i></h2>
+
+        <h2 class="tittle">Seus Favoritos, mas que todos amamos! <i class="fas fa-heart"></i></h2>
 
             <div class="pro-container">
                 <div class="pro">
