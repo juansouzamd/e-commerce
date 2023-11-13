@@ -54,6 +54,28 @@
            <p>Além disso, estamos comprometidos com práticas sustentáveis e éticas. Valorizamos o meio ambiente e buscamos constantemente maneiras de minimizar nosso impacto. Ao escolher a Cureate, você não está apenas investindo em produtos excepcionais, mas também em um futuro mais sustentável.</p>
        </section>
 
+       <div class="equipe">
+        <h1 class="equipeh1">Nossa equipe</h1>
+       </div>
+
+       <div class="pessoa">
+        <div class="diretores">
+            <img src="assets/img/front-end/equipe/mario.png" alt="" class="img">
+            <p><span>Mario Bros </span> CEO (Chief Executive Officer) <br> Telefone: 11 99999 - 9999 <br> Email:
+                mario@cureate.com</p>
+        </div>
+        <div class="diretores">
+            <img src="assets/img/front-end/equipe/luigi.png" alt="" class="img">
+            <p><span>Luigi Bros</span> CTO (Chief Technology Officer) <br> Telefone: 11 99999 - 9999 <br> Email:
+                luigi@cureate.com</p>
+        </div>
+        <div class="diretores">
+            <img src="assets/img/front-end/equipe/rosalina.png" alt="" class="img">
+            <p><span>Rosalina Luma</span> Senior Marketing Manager <br> Telefone: 11 99999 - 9999 <br> Email:
+                rosalina@cureate.com</p>
+        </div>
+    </div>
+
     <section id="newsletter" class="section-p1 section-m1">
             <div class="newstext">
                 <h4>Seja o primeiro a saber</h4>
@@ -121,4 +143,4 @@
         <script src="assets/js/script.js"></script>
     </body>
 
-    </html>
+</html>
