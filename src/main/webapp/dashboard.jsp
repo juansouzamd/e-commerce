@@ -17,6 +17,7 @@
             <tr>
                 <td></td>
                 <td>${car.name}</td>
+                <td>${1 + 1}</td>
             </tr>
         </c:forEach>
     </table>
