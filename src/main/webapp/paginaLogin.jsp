@@ -21,7 +21,7 @@
             <h2 class="title">Fazer login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="E-mail" name="user-email" id="user-email />
+              <input type="text" placeholder="E-mail" name="user-email" id="user-email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
