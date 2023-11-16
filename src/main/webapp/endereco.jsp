@@ -40,28 +40,29 @@
     </section>
 
     <div>
-        <form action="/login" class="sign-in-form"  method="post">
+        <form action="/alterar-endereco?userId=${param.userId}" class="sign-in-form"  method="post">
 
             <h2 class="title">Atualizar endereço</h2>
-
+              <input hidden type="text" name="id" id="id" value="${param.id}"/>
+              <input hidden type="text" name="user-id" id="user-id" value="${param.userId}"/>
             <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Rua" name="user-rua" id="user-rua"/>
+                <i class="fas fa-user"></i>
+               <input type="text" placeholder="Rua" name="user-rua" id="user-rua" value="${param.rua}"/>
             </div>
 
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Número" name="user-numero" id="user-numero"/>
+              <input type="text" placeholder="Número" name="user-numero" id="user-numero" value="${param.numero}"/>
             </div>
 
             <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Bairro" name="user-bairro" id="user-bairro"/>
+                <input type="text" placeholder="Bairro" name="user-bairro" id="user-bairro"  value="${param.bairro}"/>
             </div>
 
             <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Cep" name="user-cep" id="user-cep"/>
+                <input type="text" placeholder="Cep" name="user-cep" id="user-cep"  value="${param.cep}"/>
             </div>
 
             <input type="submit" class="btn" value="Atualizar" />
