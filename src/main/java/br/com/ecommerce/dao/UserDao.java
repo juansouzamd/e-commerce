@@ -36,12 +36,54 @@ public class UserDao {
         } catch (Exception e) {
 
             System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+            System.out.println("Cause: " + e.getCause());
 
         }
     }
 
-    public boolean verifyCredentials(User user) {
+    public User getUser(String email, String password) {
 
+        User user = new User();
+        String SQL = "SELECT * FROM TB_USUARIO WHERE Email = ? AND Senha = ?";
+
+        try {
+
+            Connection connection = database.GetConnection();
+
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, email);
+            preparedStatement.setString(2, password);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("success in select user");
+
+            while (resultSet.next()) {
+                user.setSenha(resultSet.getString("senha"));
+                user.setTelefone(resultSet.getString("telefone"));
+                user.setId(resultSet.getInt("id"));
+                user.setCpf(resultSet.getString("cpf"));
+                user.setEmail(resultSet.getString("email"));
+                user.setDataNascimento(resultSet.getString("data_nascimento"));
+            }
+
+            connection.close();
+
+            return user;
+
+        } catch (Exception e) {
+
+            System.out.println("Error: " + e.getMessage());
+
+        }
+
+        return user;
+    }
+
+    public boolean verifyCredentials(String email, String password) {
+        Boolean isValid = false;
         String SQL = "SELECT * FROM TB_USUARIO WHERE Email = ?";
 
         try {
@@ -51,34 +93,74 @@ public class UserDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, user.getEmail());
+            preparedStatement.setString(1, email);
             ResultSet resultSet = preparedStatement.executeQuery();
 
             System.out.println("success in select user");
 
             while (resultSet.next()) {
 
-                String password = resultSet.getString("senha");
+                String passwordFromTable = resultSet.getString("senha");
+                System.out.println("Senha banco: " + passwordFromTable);
+                System.out.println("Senha usuario: " + password);
 
-                if (password.equals(user.getSenha())) {
-
-                    return true;
-
+                if (passwordFromTable.equals(password)) {
+                    isValid = true;
+                    System.out.println("Caiu no if");
                 }
 
             }
 
             connection.close();
 
-            return false;
+        } catch (Exception e) {
+
+            System.out.println("Error: " + e.getMessage());
+            System.out.println("Cause: " + e.getCause());
+        }
+        return isValid;
+    }
+
+    public User getUserById(int id) {
+
+        User user = new User();
+        String SQL = "SELECT * FROM TB_USUARIO WHERE Id = ?";
+
+        try {
+
+            Connection connection = database.GetConnection();
+
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("success in select user");
+
+            while (resultSet.next()) {
+
+                user.setSenha(resultSet.getString("senha"));
+                user.setTelefone(resultSet.getString("telefone"));
+                user.setId(resultSet.getInt("id"));
+                user.setCpf(resultSet.getString("cpf"));
+                user.setEmail(resultSet.getString("email"));
+                user.setDataNascimento(resultSet.getString("data_nascimento"));
+                user.setNome(resultSet.getString("nome"));
+            }
+
+            connection.close();
+
+            return user;
 
         } catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage());
 
-            return false;
-
         }
 
+        return user;
     }
+
+
 }

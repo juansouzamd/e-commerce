@@ -13,7 +13,7 @@ public class LoginUser extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println("LoginUser doGet");
         req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
 
     }
@@ -21,24 +21,28 @@ public class LoginUser extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        System.out.println("LoginUser doPost");
         String email = req.getParameter("user-email");
         String password = req.getParameter("user-senha");
+        System.out.println("Email: " + email);
+        System.out.println("Senha: " + password);
 
-        User user = new User(email, password);
-
-        boolean isValidUser = new UserDao().verifyCredentials(user);
+        UserDao userDao = new UserDao();
+        boolean isValidUser = userDao.verifyCredentials(email, password);
 
         if (isValidUser) {
+            System.out.println("Usuario valido");
+            User user = userDao.getUser(email,password);
 
             req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect(req.getContextPath() + "/");
-
+            resp.sendRedirect("index.jsp?id=" + user.getId());
         } else {
+            System.out.println("Usuario Invalido");
 
             req.setAttribute("message", "Invalid credentials!");
 
-            req.getRequestDispatcher("index.jsp").forward(req, resp);
+            req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
 
         }
 

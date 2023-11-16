@@ -2,6 +2,7 @@
 
     <!DOCTYPE html>
     <html lang="pt-BR">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
     <head>
         <meta charset="UTF-8">
@@ -41,7 +42,7 @@
 
         <div class="usuario">
             <div class="form">
-                <form action="/login" class="sign-in-form" method="post">
+                <form action="/criar-endereco?id=${usuario.id}" class="sign-in-form" method="post">
 
                     <h2 class="title">Cadastrar endereço</h2>
 
@@ -64,6 +65,7 @@
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Cep" name="user-cep" id="user-cep" />
                     </div>
+                        <input hidden type="text" placeholder="id" name="user-id" id="user-id" value="${usuario.id}" />
 
                     <input type="submit" class="btn" value="Cadastrar" />
 
@@ -74,28 +76,30 @@
             <div class="dadosTotal">
 
                 <div class="total">
-                    <h3 class="nomes h3nome">Nome: <p class="nome">####</p> </h3>
+                    <h3 class="nomes h3nome">Nome: <p class="nome">${usuario.nome}</p> </h3>
                 </div>
 
                 <div class="total">
-                    <h3 class="nomes">E-mail: <p class="email">####</p> </h3>
+                    <h3 class="nomes">E-mail: <p class="email">${usuario.email}</p></h3>
                 </div>
 
                 <div class="total">
-                    <h3 class="nomes">Telefone: <p class="telefone">####</p> </h3>
+                    <h3 class="nomes">Telefone: <p class="telefone">${usuario.telefone}</p> </h3>
                 </div>
 
                 <div class="total">
-                    <h3 class="nomes">Data de nascimento: <p class="dataNasc">####</p> </h3>
+                    <h3 class="nomes">Data de nascimento: <p class="dataNasc">${usuario.dataNascimento}</p> </h3>
                 </div>
 
                 <div class="total">
-                    <h3 class="nomes">Cpf: <p class="cpf">####</p> </h3>
+                    <h3 class="nomes">Cpf: <p class="cpf">${usuario.cpf}</p> </h3>
                 </div>
 
             </div>
 
         </div>
+
+        <!-- Listar Enderecos -->
 
         <div class="bloco2">
 
@@ -104,17 +108,28 @@
            <!-- <h4 class="h4">Ainda não há endereços cadastrados</h4> -->
 
                 <div class="total enderecoCadastrado">
-
-                <h4 class="end">####</h4>
-
-                <div class="botoes">
-                    <input type="submit" class="btn bot" value="Atualizar" />
-                    <input type="submit" class="btn" value="Excluir" />
-                </div>
+        <table>
+        <c:forEach var="endereco" items="${enderecos}">
+             <tr>
+                       <td>
+                            <h4 hidden class="end" id="id" name="id">${endereco.id}</h4>
+                            <text class="end">${endereco.rua}, ${endereco.bairro}, N° ${endereco.numero}.</text>
+                            <text class="end">CEP: ${endereco.cep}, </text>
+                            <div class="botoes">
+                              <a href="endereco.jsp?id=${endereco.id}&rua=${endereco.rua}&numero=${endereco.numero}&bairro=${endereco.bairro}&cep=${endereco.cep}&userId=${usuario.id}"><input type="submit" class="btn bot" value="Atualizar"/></a>
+                             <form action="/excluir-endereco?id=${endereco.id}&userId=${usuario.id}" method="post">
+                                <input type="submit" class="btn" value="Excluir" />
+                             </form>
+                            </div>
+                       </td>
+             </tr>
+        </c:forEach>
+        </table>
 
             </div>
 
         </div>
+        <!-- Fim Listar Enderecos -->
 
 
         <section id="newsletter" class="section-p1 section-m1">

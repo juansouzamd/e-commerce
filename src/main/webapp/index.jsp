@@ -21,10 +21,11 @@
 
         <div>
             <ul id="navbar">
+                <text  id="id" name="id" value="${param.id}">Id: ${param.id} </text>
                 <li><a href="index.jsp">Início</a></li>
                 <li><a href="sobre.jsp">Sobre</a></li>
                 <li><a href="contato.jsp">Contato</a></li>
-                <li id="lg-bag"><a href="favoritos.jsp"><i class="fas fa-heart"></i></a></li>
+                <li id="lg-bag"><a href="/get-enderecos?id=${param.id}" type="submit"><i class="fas fa-heart"></i></a></li>
                 <li id="lg-bag"><a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a></li>
                 <li id="lg-bag"><a href="paginaLogin.jsp"><i class="fas fa-user"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
