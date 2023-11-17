@@ -28,21 +28,6 @@
               <input type="password" placeholder="Senha" name="user-senha" id="user-senha"/>
             </div>
             <input type="submit" class="btn" value="Entrar" />
-            <p class="social-text">Ou faça login com as redes sociais</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
           </form>
            <!-- Formulário de Criação de Conta -->
           <form action="/create-user" class="sign-up-form" method="post">

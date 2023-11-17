@@ -78,19 +78,19 @@
 
     </div>
 
-    <form action="">
+    <form action="/salvar-cartao" method="post">
         <div class="inputBox">
             <span><Nav>número do cartão</Nav></span>
-            <input type="text" maxlength="16" class="card-number-input">
+            <input type="text" maxlength="16" class="card-number-input" name="numero-cartao" id="numero-cartao">
         </div>
         <div class="inputBox">
             <span>titular do cartão</span>
-            <input type="text" class="card-holder-input">
+            <input type="text" class="card-holder-input" name="titular" id="titular">
         </div>
         <div class="flexbox">
             <div class="inputBox">
                 <span>mês expiração</span>
-                <select name="" id="" class="month-input">
+                <select name="mes" id="mes" class="month-input">
                     <option value="month" selected disabled>mês</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -108,7 +108,7 @@
             </div>
             <div class="inputBox">
                 <span>ano expiração</span>
-                <select name="" id="" class="year-input">
+                <select name="ano" id="ano" class="year-input">
                     <option value="year" selected disabled>ano</option>
                     <option value="2024">2024</option>
                     <option value="2025">2025</option>
@@ -124,7 +124,7 @@
             </div>
             <div class="inputBox">
                 <span>cvv</span>
-                <input type="text" maxlength="4" class="cvv-input">
+                <input type="text" maxlength="4" class="cvv-input" name="cvv" id="cvv">
             </div>
         </div>
         <input type="submit" value="comprar" class="submit-btn">
