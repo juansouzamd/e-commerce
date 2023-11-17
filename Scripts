@@ -1,0 +1,59 @@
+---- Create Table -----
+
+CREATE TABLE TB_USUARIO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    telefone VARCHAR(20),
+    data_nascimento VARCHAR(20),
+    nome VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE TB_CARTAO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero VARCHAR(16),
+    titular VARCHAR(255),
+    vencimento DATE,
+    id_usuario INT,
+    FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO(id)
+);
+
+CREATE TABLE TB_ENDERECO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    rua VARCHAR(255),
+    cep VARCHAR(10),
+    bairro VARCHAR(255),
+    numero INT,
+    id_usuario INT,
+    FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO(id)
+);
+
+CREATE TABLE TB_PRODUTO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    descricao TEXT,
+    genero VARCHAR(255),
+    categoria VARCHAR(255)
+);
+
+CREATE TABLE TB_PEDIDO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    status VARCHAR(50) NOT NULL,
+    valor_total DECIMAL(10, 2) NOT NULL,
+    pago BOOLEAN NOT NULL,
+    estimativa_entrega DATE,
+    data_pedido DATE,
+    id_usuario INT,
+    FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO(id)
+);
+
+CREATE TABLE TB_PEDIDO_ITEM (
+    id_produto INT,
+    id_pedido INT,
+    quantidade INT,
+    PRIMARY KEY (id_produto, id_pedido),
+    FOREIGN KEY (id_produto) REFERENCES TB_PRODUTO(id),
+    FOREIGN KEY (id_pedido) REFERENCES TB_PEDIDO(id)
+);
