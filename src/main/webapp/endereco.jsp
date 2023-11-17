@@ -18,26 +18,27 @@
 <body>
 
     <section id="header">
-        <a href="index.jsp"><img src="assets/img/front-end/logo.png" class="logo" alt=""></a>
+                    <a href="index.jsp?id=${param.id}"><img src="assets/img/front-end/logo.png" class="logo" alt=""></a>
 
-        <div>
-            <ul id="navbar">
-                <li><a href="index.jsp">Início</a></li>
-                <li><a href="sobre.jsp">Sobre</a></li>
-                <li><a href="contato.jsp">Contato</a></li>
-                <li id="lg-bag"><a href="favoritos.jsp"><i class="fas fa-heart"></i></a></li>
-                <li id="lg-bag"><a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a></li>
-                <li id="lg-bag"><a href="paginaLogin.jsp"><i class="fas fa-user"></i></a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-             <a href="favoritos.jsp"><i class="fas fa-heart"></i></a>
-            <a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a>
-            <a href="paginaLogin.jsp"><i class="fas fa-user"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
-    </section>
+                    <div>
+                        <ul id="navbar">
+                            <li><a href="index.jsp?id=${param.id}">Início</a></li>
+                            <li><a href="sobre.jsp?id=${param.id}">Sobre</a></li>
+                            <li><a href="contato.jsp?id=${param.id}">Contato</a></li>
+                            <li id="lg-bag"><a href="carrinho.jsp?id=${param.id}"><i class="far fa-shopping-bag"></i></a></li>
+                            <li id="lg-bag"><a href="/login?id=${param.id}"><i class="fas fa-user"></i></a></li>
+                            <li id="lg-bag"><a href="/index.jsp"><i class="fas fa-sign-out"></i></a></li>
+                            <a href="#" id="close"><i class="far fa-times"></i></a>
+                        </ul>
+                    </div>
+                    <div id="mobile">
+                         <a href="favoritos.jsp?id=${param.id}"><i class="fas fa-heart"></i></a>
+                        <a href="carrinho.jsp?id=${param.id}"><i class="far fa-shopping-bag"></i></a>
+                        <a href="/login?id=${param.id}"><i class="fas fa-user"></i></a>
+                        <a href="/index.jsp"><i class="fas fa-sign-out"></i></a>
+                        <i id="bar" class="fas fa-outdent"></i>
+                    </div>
+                </section>
 
     <div>
         <form action="/alterar-endereco?userId=${param.userId}" class="sign-in-form"  method="post">

@@ -14,7 +14,19 @@ public class LoginUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("LoginUser doGet");
-        req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
+
+        String userId = "";
+        userId = req.getParameter("id");
+        System.out.println("IDPARAMETER: " + userId);
+
+        if(userId == null || userId.isEmpty())
+        {
+            req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
+        }
+        else{
+            resp.sendRedirect("/get-enderecos?id=" + userId);
+        }
+
 
     }
 

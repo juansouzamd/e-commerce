@@ -8,12 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b20d6d-d397-47d3-84a6-69d25a147ec7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/endereco/ExcluirEndereco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/endereco/GetEnderecos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/user/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/user/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/carrinho.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/carrinho.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/contato.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contato.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/endereco.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/endereco.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/favoritos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/favoritos.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sobre.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sobre.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/usuario.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
