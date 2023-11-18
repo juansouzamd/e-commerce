@@ -8,15 +8,21 @@ public class Produto {
     private String genero;
     private String categoria;
 
+    private String marca;
+
+    private String imagemPrincipal;
+
     public Produto() {}
 
-    public Produto(int id, String nome, double preco, String descricao, String genero, String categoria) {
+    public Produto(int id, String nome, double preco, String descricao, String genero, String categoria, String marca, String imagemPrincipal) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.descricao = descricao;
         this.genero = genero;
         this.categoria = categoria;
+        this.marca = marca;
+        this.imagemPrincipal = imagemPrincipal;
     }
 
     // Getters e Setters
@@ -69,4 +75,18 @@ public class Produto {
         this.categoria = categoria;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    public String getImagemPrincipal() {
+        return imagemPrincipal;
+    }
+
+    public void setImagemPrincipal(String imagemPrincipal) {
+        this.marca = imagemPrincipal;
+    }
 }

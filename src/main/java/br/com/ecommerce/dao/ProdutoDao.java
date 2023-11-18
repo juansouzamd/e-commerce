@@ -29,8 +29,10 @@ public class ProdutoDao {
                 String descricao = resultSet.getString("descricao");
                 String genero = resultSet.getString("genero");
                 String categoria = resultSet.getString("categoria");
+                String marca = resultSet.getString("marca");
+                String imagemPrincipal = resultSet.getString("imagem_principal");
 
-                Produto produto = new Produto(id, nome, preco, descricao, genero, categoria);
+                Produto produto = new Produto(id, nome, preco, descricao, genero, categoria, marca, imagemPrincipal);
 
                 produtos.add(produto);
             }

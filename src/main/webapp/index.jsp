@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,6 +73,31 @@
         <h2>Produtos em destaque</h2>
         <p>Desenvolvidos para seu maior conforto</p>
         <div class="pro-container">
+
+            <c:forEach var="produto" items="${produtos}">
+                <div class="pro">
+                    <a href="produto.jsp" class="decoration">
+                        <img src="${produto.imagemPrincipal}"
+                            alt="">
+                        <div class="des">
+                            <span>${produto.marca}</span>
+                            <h5>${produto.nome}</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>R$ ${produto.preco}</h4>
+                        </div>
+                    </a>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+        </c:forEach>
+
+
+
             <div class="pro">
                 <a href="produto.jsp" class="decoration">
                     <img src="assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision01.png"
