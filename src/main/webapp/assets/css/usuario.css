@@ -255,3 +255,13 @@ form.sign-in-form {
 .bot {
     margin: 0% 1% 0% 1%;
 }
+
+.botaoObrigado {
+  display: flex;
+  justify-content: center;
+}
+
+.bo {
+  width: 200px;
+  height: 50px;
+}
