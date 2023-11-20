@@ -41,24 +41,24 @@
 
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision01.png"
+            <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png"
                 width="100%" id="MainImg" alt="">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision01.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png"
                         width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision02.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision02.png"
                         width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision03.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision03.png"
                         width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Nike Precision 6 Masculino/Nike Precision04.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision04.png"
                         width="100%" class="small-img" alt="">
                 </div>
             </div>
@@ -96,7 +96,7 @@
         <div class="pro-container">
             <div class="pro">
                 <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino01.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino01.png"
                         alt="">
                     <div class="des">
                         <span>Nike</span>
@@ -115,7 +115,7 @@
             </div>
             <div class="pro">
                 <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Jordan MVP Masculino/Tênis Jordan MVP Masculino01.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino01.png"
                         alt="">
                     <div class="des">
                         <span>Nike</span>
@@ -134,7 +134,7 @@
             </div>
             <div class="pro">
                 <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tênis/Tênis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino01.png"
+                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino01.png"
                         alt="">
                     <div class="des">
                         <span>Nike</span>
@@ -153,7 +153,7 @@
             </div>
             <div class="pro">
                 <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tênis/LeBron NXXT Gen/LeBron NXXT Gen01.png" alt="">
+                    <img src="assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen01.png" alt="">
                     <div class="des">
                         <span>Nike</span>
                         <h5>Tênis LeBron NXXT Gen</h5>
