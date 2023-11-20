@@ -234,12 +234,24 @@ form.sign-in-form {
 }
 
 .end {
-    padding: 0 0 0 2%;
+    /*padding: 0 0 0 2%;*/
     font-size: 1.5rem;
 }
 
+.botoes {
+  display: flex;
+  justify-content:left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.bot {
+  margin-right: 85%;
+}
+
 .enderecoCadastrado {
-    width: 70%;
+    width: 75%;
+    padding-top: 20px;
 }
 
 .h4 {
@@ -252,10 +264,6 @@ form.sign-in-form {
     font-style: italic;
 }
 
-.bot {
-    margin: 0% 1% 0% 1%;
-}
-
 .botaoObrigado {
   display: flex;
   justify-content: center;
@@ -264,4 +272,8 @@ form.sign-in-form {
 .bo {
   width: 200px;
   height: 50px;
+}
+
+.branco {
+  height: 15px;
 }
