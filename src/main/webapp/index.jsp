@@ -74,7 +74,7 @@
         <p>Desenvolvidos para seu maior conforto</p>
         <div class="pro-container">
 
-            <c:forEach var="produto" items="${produtos}">
+            <c:forEach var="produto" items="${listaTenis}">
                 <div class="pro">
                     <a href="produto.jsp" class="decoration">
                         <img src="${produto.imagemPrincipal}"
@@ -98,157 +98,12 @@
 
 
 
-            <div class="pro">
-                <a href="produto.jsp" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Nike Precision 6</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$479,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen01.png" alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis LeBron NXXT Gen</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$1299,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Jordan MVP</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$999,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 FlyEase Masculino/Tenis Nike Precision 6 FlyEase Masculino01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Nike Precision 6 FlyEase</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$679,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Air Force 1 '07 Masculino/Tenis Nike Air Force01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Nike Air Force</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$799,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Air Jordan 1 Retro High</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$999,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Nike LeBron 20</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$1299,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Tênis Nike Giannis Immortality</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$1699,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
+
+
+
+
+
+            
         </div>
     </section>
 
@@ -261,158 +116,27 @@
         <h2>Lançamentos</h2>
         <p>Coleções desenvolvidas seguindo atletas campeões</p>
         <div class="pro-container">
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I01.jpg"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Camiseta Nike Brasil I</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$249,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Camiseta Nike Brasil II</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$249,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Camisa Nike Corinthians I</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$249,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II01.png"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Camisa Nike Corinthians II</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$249,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Regata NBA Golden State Warriors</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$699,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers01.webp"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Regata NBA Los Angeles Lakers</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$699,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies01.webp"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Regata NBA Nike Memphis Grizzlies</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$699,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets01.webp"
-                        alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Regata NBA Nike Denver Nuggets</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$699,99</h4>
-                    </div>
-                </a>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
+              <c:forEach var="camiseta" items="${camisetas}">
+                            <div class="pro">
+                                <a href="produto.jsp" class="decoration">
+                                    <img src="${camiseta.imagemPrincipal}"
+                                        alt="">
+                                    <div class="des">
+                                        <span>${camiseta.marca}</span>
+                                        <h5>${camiseta.nome}</h5>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <h4>R$ ${camiseta.preco}</h4>
+                                    </div>
+                                </a>
+                                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                            </div>
+                    </c:forEach>
         </div>
     </section>
 

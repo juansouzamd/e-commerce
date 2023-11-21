@@ -20,9 +20,13 @@ public class ListarProdutos extends HttpServlet {
 
         System.out.println("ListarProdutos Servelet");
 
-        List<Produto> produtos = new ProdutoDao().getProdutos();
+        ProdutoDao produtoDao = new ProdutoDao();
 
-        req.setAttribute("produtos", produtos);
+        List<Produto> tenis = produtoDao.getProdutosByCategoria("Tenis");
+        List<Produto> camisetas = produtoDao.getProdutosByCategoria("Camiseta");
+
+        req.setAttribute("listaTenis", tenis);
+        req.setAttribute("camisetas", camisetas);
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 }

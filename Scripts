@@ -154,3 +154,94 @@ VALUES (
   'assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino01.png'
 );
 
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Camiseta Nike Brasil I',
+  249.99,
+  'A Coleção da Seleção Brasileira de 2022 combina a icônica estampa da onça-pintada com design inovador que mantém seu corpo seco mesmo no auge da empolgação. Uma homenagem ao Brasil e ao seu povo, esta coleção foi feita para mostrar a sua garra.',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I01.jpg'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Camiseta Nike Brasil II',
+  249.99,
+  'A Coleção da Seleção Brasileira de 2022 combina a icônica estampa da onça-pintada com design inovador que mantém seu corpo seco mesmo no auge da empolgação. Uma homenagem ao Brasil e ao seu povo, esta coleção foi feita para mostrar a sua garra.',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II01.png'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Camisa Nike Corinthians I',
+  249.99,
+  'O legado do Corinthians transcede as quatro linhas do jogo. Em 1983, o Corinthians conquistou o título Paulista com o compromisso de que todas as vozes fossem ouvidas, uma crença que até hoje move os corações pelo Timão.
+Com detalhes que fazem referência ao estilo icônico dos anos 80, e ao movimento Democracia Corinthiana, a nova camisa I celebra a filosofia que a torcida Corinthiana fortalece até hoje para conduzir o clube. Histórica.',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I01.png'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Camisa Nike Corinthians II',
+  249.99,
+  'O legado do Corinthians transcede as quatro linhas do jogo. Em 1983, o Corinthians conquistou o título Paulista com o compromisso de que todas as vozes fossem ouvidas, uma crença que até hoje move os corações pelo Timão.
+Com lindas listras simples e detalhes em vermelho, que lembram a camisa 2 dos anos 80, o novo uniforme resgata o passado para o presente dos feitos realizados dentro e fora de campo.
+Clássica.',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II01.png'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Regata NBA Golden State Warriors',
+  699.99,
+  'Seja para jogar sua partida de basquete ou para um lifestyle esportivo, a Regata NBA Golden State Warriors Nike Dri-Fit Masculina é a escolha para mais atitude e conforto. É confeccionada em material macio e respirável, com tecnologia que afasta suor e mantém e pele seca por mais tempo. Conta com ótimo caimento no corpo, gola V diferenciada, escudo dos Warriors em destaque e número do Curry nas costas. Mostre sua paixão pelo basquete usando essa camiseta masculina NBA junto com um tênis de basquete. Invista!',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Regata NBA Los Angeles Lakers',
+  699.99,
+  'Mostre sua paixão pelo basquete usando a Regata NBA Los Angeles Lakers Mitchell & Ness Jersey Masculina. Essa peça é confeccionada em material macio ao toque da pele, recorte em mesh para respirabilidade extra, logo do Lakers em destaque para autenticidade, feita pela licenciada NBA, Mitchell & Ness. Seja dentro das quadras ou no urbanwear, essa regata de basquete é a escolha para quem busca atitude e estilo nas combinações. Use com um tênis de basquete e peça já sua regata masculina NBA!',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers01.webp'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Regata NBA Nike Memphis Grizzlies',
+  699.99,
+  'Mostre a sua torcida pelos Grizzlies usando a Regata NBA Nike Memphis Grizzlies Dri-Fit Morant 12 Masculina. Essa peça é confeccionada em material macio ao toque da pele, com tecnologia que afasta o suor e mantém a pele seca por mais tempo, modelagem soltinha e ótima opção para usar no dia a dia além de jogos de basquete. Com escudo em destaque para atitude nas combinações. Use com um tênis de basquete e uma calça jeans para look despojado. Peça já sua regata masculina NBA!',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies01.webp'
+);
+
+INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
+VALUES (
+  'Regata NBA Nike Denver Nuggets',
+  699.99,
+  'Mostre sua paixão pelo basquete dentro e fora das quadras com o Regata NBA Nike Denver Nuggets Dri-Fit Masculina. Essa regata de basquete conta com a personalização nas costas, para te inspirar nas suas jogadas com estilo e garra. Conta ainda com tecido tecnológico que afasta o suor e mantém a pele seca por mais tempo. Peça já sua regata masculina NBA e deixe sua marca!',
+  'Masculino',
+  'Camiseta',
+  'Nike',
+  'assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets01.webp'
+);
+
