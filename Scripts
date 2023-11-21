@@ -269,9 +269,114 @@ VALUES ('assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen01.p
        
 
 INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
-VALUES ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino02.png', 'Tenis Jordan MVP'),
-       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino02.png', 'Tenis Jordan MVP'),
-       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino04.png', 'Tenis Jordan MVP'),
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino01.png', 'Tenis Jordan MVP'),
        ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino01.png', 'Tenis Jordan MVP'),
-       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino03.png', 'Tenis Jordan MVP');
-       
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino02.png', 'Tenis Jordan MVP'),
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino03.png', 'Tenis Jordan MVP'),
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino04.png', 'Tenis Jordan MVP');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 FlyEase Masculino/Tenis Nike Precision 6 FlyEase Masculino01.png', 'Tenis Nike Precision 6 FlyEase'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 FlyEase Masculino/Tenis Nike Precision 6 FlyEase Masculino01.png', 'Tenis Nike Precision 6 FlyEase'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 FlyEase Masculino/Tenis Nike Precision 6 FlyEase Masculino02.png', 'Tenis Nike Precision 6 FlyEase'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 FlyEase Masculino/Tenis Nike Precision 6 FlyEase Masculino03.png', 'Tenis Nike Precision 6 FlyEase'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 FlyEase Masculino/Tenis Nike Precision 6 FlyEase Masculino04.png', 'Tenis Nike Precision 6 FlyEase');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Nike Air Force 1 ''07 Masculino/Tenis Nike Air Force01.png', 'Tenis Nike Air Force'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Air Force 1 ''07 Masculino/Tenis Nike Air Force01.png', 'Tenis Nike Air Force'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Air Force 1 ''07 Masculino/Tenis Nike Air Force02.png', 'Tenis Nike Air Force'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Air Force 1 ''07 Masculino/Tenis Nike Air Force03.png', 'Tenis Nike Air Force'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Air Force 1 ''07 Masculino/Tenis Nike Air Force04.png', 'Tenis Nike Air Force');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png', 'Tenis Air Jordan 1 Retro High'),
+       ('assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png', 'Tenis Air Jordan 1 Retro High'),
+       ('assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High02.png', 'Tenis Air Jordan 1 Retro High'),
+       ('assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High03.png', 'Tenis Air Jordan 1 Retro High'),
+       ('assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High04.png', 'Tenis Air Jordan 1 Retro High');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino01.png', 'Tenis Nike LeBron 20'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino01.png', 'Tenis Nike LeBron 20'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino02.png', 'Tenis Nike LeBron 20'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino03.png', 'Tenis Nike LeBron 20'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike LeBron 20 Masculino/Tenis Nike LeBron 20 Masculino04.png', 'Tenis Nike LeBron 20');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino01.png', 'Tenis Nike Giannis Immortality'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino01.png', 'Tenis Nike Giannis Immortality'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino02.png', 'Tenis Nike Giannis Immortality'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino03.png', 'Tenis Nike Giannis Immortality'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tenis Nike Giannis Immortality 3 Masculino04.png', 'Tenis Nike Giannis Immortality');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I01.jpg', 'Camiseta Nike Brasil I'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I01.jpg', 'Camiseta Nike Brasil I'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I02.jpg', 'Camiseta Nike Brasil I'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I03.jpg', 'Camiseta Nike Brasil I'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil I/Camiseta Nike Brasil I04.jpg', 'Camiseta Nike Brasil I');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II01.png', 'Camiseta Nike Brasil II'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II01.png', 'Camiseta Nike Brasil II'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II02.png', 'Camiseta Nike Brasil II'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II03.png', 'Camiseta Nike Brasil II'),
+       ('assets/img/front-end/produtos/camisetas/Camiseta Nike Brasil II/Camiseta Nike Brasil II04.png', 'Camiseta Nike Brasil II');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I01.png', 'Camisa Nike Corinthians I'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I01.png', 'Camisa Nike Corinthians I'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I02.png', 'Camisa Nike Corinthians I'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I03.png', 'Camisa Nike Corinthians I'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians I/Camisa Nike Corinthians I04.png', 'Camisa Nike Corinthians I');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II01.png', 'Camisa Nike Corinthians II'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II01.png', 'Camisa Nike Corinthians II'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II02.png', 'Camisa Nike Corinthians II'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II03.png', 'Camisa Nike Corinthians II'),
+       ('assets/img/front-end/produtos/camisetas/Camisa Nike Corinthians II/Camisa Nike Corinthians II04.png', 'Camisa Nike Corinthians II');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp', 'Regata NBA Golden State Warriors'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp', 'Regata NBA Golden State Warriors'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors02.webp', 'Regata NBA Golden State Warriors'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors03.webp', 'Regata NBA Golden State Warriors'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors04.webp', 'Regata NBA Golden State Warriors');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers01.webp', 'Regata NBA Los Angeles Lakers'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers01.webp', 'Regata NBA Los Angeles Lakers'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers02.webp', 'Regata NBA Los Angeles Lakers'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers03.webp', 'Regata NBA Los Angeles Lakers'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Los Angeles Lakers/Regata NBA Los Angeles Lakers04.webp', 'Regata NBA Los Angeles Lakers');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies01.webp', 'Regata NBA Nike Memphis Grizzlies'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies01.webp', 'Regata NBA Nike Memphis Grizzlies'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies02.webp', 'Regata NBA Nike Memphis Grizzlies'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies03.webp', 'Regata NBA Nike Memphis Grizzlies'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Memphis Grizzlies/Regata NBA Nike Memphis Grizzlies04.webp', 'Regata NBA Nike Memphis Grizzlies');
+
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets01.webp', 'Regata NBA Nike Denver Nuggets'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets01.webp', 'Regata NBA Nike Denver Nuggets'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets02.webp', 'Regata NBA Nike Denver Nuggets'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets03.webp', 'Regata NBA Nike Denver Nuggets'),
+       ('assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets04.webp', 'Regata NBA Nike Denver Nuggets');
+
+
