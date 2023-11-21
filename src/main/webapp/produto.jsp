@@ -131,11 +131,11 @@
             </div>
             <div class="pro">
                 <a href="#" class="decoration">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Giannis Immortality 3 Masculino/Tênis Nike Giannis Immortality 3 Masculino01.png"
+                    <img src="assets/img/front-end/produtos/tenis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png"
                         alt="">
                     <div class="des">
                         <span>Nike</span>
-                        <h5>Tênis Nike Giannis Immortality</h5>
+                        <h5>Tênis Air Jordan 1 Retro High</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -143,7 +143,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>R$1699,99</h4>
+                        <h4>R$999,99</h4>
                     </div>
                 </a>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
