@@ -31,14 +31,22 @@ CREATE TABLE TB_ENDERECO (
 
 CREATE TABLE TB_PRODUTO (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
+    nome VARCHAR(255) NOT NULL UNIQUE,
     preco DECIMAL(10, 2) NOT NULL,
     descricao TEXT,
     genero VARCHAR(255),
     categoria VARCHAR(255),
     marca VARCHAR(255),
-    imagem_principal TEXT
+    imagem_principal TEXT 
 );
+
+CREATE TABLE TB_IMAGENS_PRODUTO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    caminho VARCHAR(255) NOT NULL,
+    nome_produto VARCHAR(255),
+    FOREIGN KEY (nome_produto) REFERENCES TB_PRODUTO(nome)
+);
+
 
 CREATE TABLE TB_PEDIDO (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,9 +73,9 @@ CREATE TABLE TB_PEDIDO_ITEM (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Nike Precision 6',
+  'Tenis Nike Precision 6',
   479.99,
-  'Crie espaço, pare bruscamente e domine o drible com o Nike Precision 6 FlyEase, um tênis para todos os atletas e ideal para o basquete. A tira grande no médio pé permite amarrar os cadarços e fixar o ajuste com uma mão. O design de desempenho permite que os jogadores mudem de velocidade e de direção, mantendo-se no controle e aumentando o ritmo.',
+  'Crie espaço, pare bruscamente e domine o drible com o Nike Precision 6 FlyEase, um tenis para todos os atletas e ideal para o basquete. A tira grande no médio pé permite amarrar os cadarços e fixar o ajuste com uma mão. O design de desempenho permite que os jogadores mudem de velocidade e de direção, mantendo-se no controle e aumentando o ritmo.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -76,9 +84,9 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis LeBron NXXT Gen',
+  'Tenis LeBron NXXT Gen',
   1299.99,
-  'Seja você um saltador do tipo enterrada ou um jogador que fica abaixo da borda vagando pela linha de base, sinta-se mais rápido, mais baixo na quadra e seguro no LeBron NXXT Gen. Nós o adaptamos especificamente para atender às demandas do ritmo acelerado do jogo, para que você possa ficar à frente da oposição com sua velocidade e força em todas as direções.',
+  'Seja voce um saltador do tipo enterrada ou um jogador que fica abaixo da borda vagando pela linha de base, sinta-se mais rápido, mais baixo na quadra e seguro no LeBron NXXT Gen. Nós o adaptamos especificamente para atender às demandas do ritmo acelerado do jogo, para que voce possa ficar à frente da oposição com sua velocidade e força em todas as direções.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -87,9 +95,9 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Jordan MVP',
+  'Tenis Jordan MVP',
   999.99,
-  'Nós não inventamos o remix - mas considerando o material que podemos amostrar, este é o que você precisa. Acionamos o SP-12 e pegamos elementos do AJ6, 7 e 8, transformando-os em um calçado completamente novo que celebra o primeiro campeonato de 3 turfas de MJ. Com detalhes em couro, tecido e nobuck, esse tênis homenageia um legado enquanto incentiva você a consolidar o seu próprio.',
+  'Nós não inventamos o remix - mas considerando o material que podemos amostrar, este é o que voce precisa. Acionamos o SP-12 e pegamos elementos do AJ6, 7 e 8, transformando-os em um calçado completamente novo que celebra o primeiro campeonato de 3 turfas de MJ. Com detalhes em couro, tecido e nobuck, esse tenis homenageia um legado enquanto incentiva voce a consolidar o seu próprio.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -98,9 +106,9 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Nike Precision 6 FlyEase',
+  'Tenis Nike Precision 6 FlyEase',
   679.99,
-  'Crie espaço, pare bruscamente e domine o drible com o Nike Precision 6 FlyEase, um tênis para todos os atletas e ideal para o basquete. A tira grande no médio pé permite amarrar os cadarços e fixar o ajuste com uma mão. O design de desempenho permite que os jogadores mudem de velocidade e de direção, mantendo-se no controle e aumentando o ritmo.',
+  'Crie espaço, pare bruscamente e domine o drible com o Nike Precision 6 FlyEase, um tenis para todos os atletas e ideal para o basquete. A tira grande no médio pé permite amarrar os cadarços e fixar o ajuste com uma mão. O design de desempenho permite que os jogadores mudem de velocidade e de direção, mantendo-se no controle e aumentando o ritmo.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -109,9 +117,9 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Nike Air Force',
+  'Tenis Nike Air Force',
   799.99,
-  'O brilho perdura no original do basquete. Combinando o conforto da quadra com um brilho casual, ele dá um toque novo ao que você já conhece bem: Construção inspirada nos anos 80, detalhes ousados e muito estilo.',
+  'O brilho perdura no original do basquete. Combinando o conforto da quadra com um brilho casual, ele dá um toque novo ao que voce já conhece bem: Construção inspirada nos anos 80, detalhes ousados e muito estilo.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -122,9 +130,9 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Air Jordan 1 Retro High',
+  'Tenis Air Jordan 1 Retro High',
   999.99,
-  'Familiar, mas sempre atual, o icônico Air Jordan 1 foi remasterizado para a cultura de tênis de hoje. Esta versão Retro High OG combina com couro premium, amortecimento confortável e detalhes de design clássico.',
+  'Familiar, mas sempre atual, o icônico Air Jordan 1 foi remasterizado para a cultura de tenis de hoje. Esta versão Retro High OG combina com couro premium, amortecimento confortável e detalhes de design clássico.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -133,9 +141,9 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Nike LeBron 20',
+  'Tenis Nike LeBron 20',
   1299.99,
-  'Duas décadas de uma carreira que supera todas as expectativas, LeBron se recusou a se contentar com nada menos do que a grandeza, mesmo quando foi ele quem estabeleceu o padrão para as próximas gerações. O LeBron 20 é mais leve, próximo ao chão e turbinado. É diferente de qualquer design que LeBron já vestiu antes - confortável e com suporte, mas com cano baixo, rápido como um relâmpago e criado para ficar à frente do estilo de jogo frenético de hoje. Esse modelo é feito com um cabedal de couro clássico, uma referência ao impacto do Rei na cultura do calçado.',
+  'Duas décadas de uma carreira que supera todas as expectativas, LeBron se recusou a se contentar com nada menos do que a grandeza, mesmo quando foi ele quem estabeleceu o padrão para as próximas gerações. O LeBron 20 é mais leve, próximo ao chão e turbinado. É diferente de qualquer design que LeBron já vestiu antes - confortável e com suporte, mas com cano baixo, rápido como um relâmpago e criado para ficar à frente do estilo de jogo frenético de hoje. Esse modelo é feito com um cabedal de couro clássico, uma referencia ao impacto do Rei na cultura do calçado.',
   'Masculino',
   'Tenis',
   'Nike',
@@ -145,7 +153,7 @@ VALUES (
 
 INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem_principal)
 VALUES (
-  'Tênis Nike Giannis Immortality',
+  'Tenis Nike Giannis Immortality',
   1699.99,
   'Não importa a façanha, não importa o objetivo alcançado, o Greek Freak sempre mantém seus países de origem perto de seu coração. Nós misturamos as cores azul, verde e branco das bandeiras da Nigéria e da Grécia, terras nativas de Giannis, e as colocamos neste exclusivo Giannis Immortality 3. Cuidadosamente feito para o jogo de alta velocidade e sem posição de hoje, ele é mais macio do que a iteração anterior com um padrão de tração específico que é perfeito para dar o passo perfeito do Euro a caminho da glória.',
   'Masculino',
@@ -181,7 +189,7 @@ VALUES (
   'Camisa Nike Corinthians I',
   249.99,
   'O legado do Corinthians transcede as quatro linhas do jogo. Em 1983, o Corinthians conquistou o título Paulista com o compromisso de que todas as vozes fossem ouvidas, uma crença que até hoje move os corações pelo Timão.
-Com detalhes que fazem referência ao estilo icônico dos anos 80, e ao movimento Democracia Corinthiana, a nova camisa I celebra a filosofia que a torcida Corinthiana fortalece até hoje para conduzir o clube. Histórica.',
+Com detalhes que fazem referencia ao estilo icônico dos anos 80, e ao movimento Democracia Corinthiana, a nova camisa I celebra a filosofia que a torcida Corinthiana fortalece até hoje para conduzir o clube. Histórica.',
   'Masculino',
   'Camiseta',
   'Nike',
@@ -205,7 +213,7 @@ INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem
 VALUES (
   'Regata NBA Golden State Warriors',
   699.99,
-  'Seja para jogar sua partida de basquete ou para um lifestyle esportivo, a Regata NBA Golden State Warriors Nike Dri-Fit Masculina é a escolha para mais atitude e conforto. É confeccionada em material macio e respirável, com tecnologia que afasta suor e mantém e pele seca por mais tempo. Conta com ótimo caimento no corpo, gola V diferenciada, escudo dos Warriors em destaque e número do Curry nas costas. Mostre sua paixão pelo basquete usando essa camiseta masculina NBA junto com um tênis de basquete. Invista!',
+  'Seja para jogar sua partida de basquete ou para um lifestyle esportivo, a Regata NBA Golden State Warriors Nike Dri-Fit Masculina é a escolha para mais atitude e conforto. É confeccionada em material macio e respirável, com tecnologia que afasta suor e mantém e pele seca por mais tempo. Conta com ótimo caimento no corpo, gola V diferenciada, escudo dos Warriors em destaque e número do Curry nas costas. Mostre sua paixão pelo basquete usando essa camiseta masculina NBA junto com um tenis de basquete. Invista!',
   'Masculino',
   'Camiseta',
   'Nike',
@@ -216,7 +224,7 @@ INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem
 VALUES (
   'Regata NBA Los Angeles Lakers',
   699.99,
-  'Mostre sua paixão pelo basquete usando a Regata NBA Los Angeles Lakers Mitchell & Ness Jersey Masculina. Essa peça é confeccionada em material macio ao toque da pele, recorte em mesh para respirabilidade extra, logo do Lakers em destaque para autenticidade, feita pela licenciada NBA, Mitchell & Ness. Seja dentro das quadras ou no urbanwear, essa regata de basquete é a escolha para quem busca atitude e estilo nas combinações. Use com um tênis de basquete e peça já sua regata masculina NBA!',
+  'Mostre sua paixão pelo basquete usando a Regata NBA Los Angeles Lakers Mitchell & Ness Jersey Masculina. Essa peça é confeccionada em material macio ao toque da pele, recorte em mesh para respirabilidade extra, logo do Lakers em destaque para autenticidade, feita pela licenciada NBA, Mitchell & Ness. Seja dentro das quadras ou no urbanwear, essa regata de basquete é a escolha para quem busca atitude e estilo nas combinações. Use com um tenis de basquete e peça já sua regata masculina NBA!',
   'Masculino',
   'Camiseta',
   'Nike',
@@ -227,7 +235,7 @@ INSERT INTO TB_PRODUTO (nome, preco, descricao, genero, categoria, marca, imagem
 VALUES (
   'Regata NBA Nike Memphis Grizzlies',
   699.99,
-  'Mostre a sua torcida pelos Grizzlies usando a Regata NBA Nike Memphis Grizzlies Dri-Fit Morant 12 Masculina. Essa peça é confeccionada em material macio ao toque da pele, com tecnologia que afasta o suor e mantém a pele seca por mais tempo, modelagem soltinha e ótima opção para usar no dia a dia além de jogos de basquete. Com escudo em destaque para atitude nas combinações. Use com um tênis de basquete e uma calça jeans para look despojado. Peça já sua regata masculina NBA!',
+  'Mostre a sua torcida pelos Grizzlies usando a Regata NBA Nike Memphis Grizzlies Dri-Fit Morant 12 Masculina. Essa peça é confeccionada em material macio ao toque da pele, com tecnologia que afasta o suor e mantém a pele seca por mais tempo, modelagem soltinha e ótima opção para usar no dia a dia além de jogos de basquete. Com escudo em destaque para atitude nas combinações. Use com um tenis de basquete e uma calça jeans para look despojado. Peça já sua regata masculina NBA!',
   'Masculino',
   'Camiseta',
   'Nike',
@@ -245,3 +253,25 @@ VALUES (
   'assets/img/front-end/produtos/camisetas/Regata NBA Nike Denver Nuggets/Regata NBA Nike Denver Nuggets01.webp'
 );
 
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png', 'Tenis Nike Precision 6'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png', 'Tenis Nike Precision 6'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision02.png', 'Tenis Nike Precision 6'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision03.png', 'Tenis Nike Precision 6'),
+       ('assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision04.png', 'Tenis Nike Precision 6');
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen01.png', 'Tenis LeBron NXXT Gen'),
+       ('assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen01.png', 'Tenis LeBron NXXT Gen'),
+       ('assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen02.png', 'Tenis LeBron NXXT Gen'),
+       ('assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen03.png', 'Tenis LeBron NXXT Gen'),
+       ('assets/img/front-end/produtos/tenis/LeBron NXXT Gen/LeBron NXXT Gen04.png', 'Tenis LeBron NXXT Gen');
+       
+
+INSERT INTO TB_IMAGENS_PRODUTO (caminho, nome_produto)
+VALUES ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino02.png', 'Tenis Jordan MVP'),
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino02.png', 'Tenis Jordan MVP'),
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino04.png', 'Tenis Jordan MVP'),
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino01.png', 'Tenis Jordan MVP'),
+       ('assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Tenis Jordan MVP Masculino03.png', 'Tenis Jordan MVP');
+       

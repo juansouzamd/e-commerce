@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,33 +41,33 @@
 
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png"
+            <img src="${produtoItems.get(1).caminhoImagem}"
                 width="100%" id="MainImg" alt="">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision01.png"
+                    <img src="${produtoItems.get(2).caminhoImagem}"
                         width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision02.png"
+                    <img src="${produtoItems.get(3).caminhoImagem}"
                         width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision03.png"
+                    <img src="${produtoItems.get(4).caminhoImagem}"
                         width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/img/front-end/produtos/tenis/Tenis Nike Precision 6 Masculino/Nike Precision04.png"
+                    <img src="${produtoItems.get(0).caminhoImagem}"
                         width="100%" class="small-img" alt="">
                 </div>
             </div>
         </div>
 
         <div class="single-pro-details">
-            <h6>Produto / Tênis</h6>
-            <h4>Tênis Nike Precision 6 Masculino</h4>
-            <h2>R$479,99</h2>
+            <h6>Produto / ${produto.categoria}</h6>
+            <h4>${produto.nome}</h4>
+            <h2>R$ ${produto.preco}</h2>
             <select>
                 <option>Selecione o tamanho</option>
                 <option>38</option>
@@ -82,10 +82,7 @@
             <button class="normal">Adicionar ao carrinho</button>
             <h4>Detalhes do produto:</h4>
             <span>
-                Crie espaço, pare e drible com o Nike Precision 6 FlyEase. Ele foi criado para permitir que jogadores
-                rápidos mudem de velocidade e de direção, mantendo-se no controle. Desde a boca e a língua macias até o
-                padrão de tração espinha de peixe modificado, esse ágil tênis de cano baixo permite que você dê o máximo
-                de si enquanto acelera o ritmo.
+                ${produto.descricao}
             </span>
         </div>
     </section>

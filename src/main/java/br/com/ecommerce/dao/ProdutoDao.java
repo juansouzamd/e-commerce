@@ -1,5 +1,6 @@
 package br.com.ecommerce.dao;
 
+import br.com.ecommerce.model.ProdutoItem;
 import br.com.ecommerce.model.Produto;
 
 import java.sql.Connection;
@@ -79,6 +80,55 @@ public class ProdutoDao {
             }
 
             System.out.println("Success in SELECT TB_PRODUTO");
+
+            connection.close();
+
+            return produtos;
+        } catch (Exception e) {
+            System.out.println("Fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+            return Collections.emptyList();
+        }
+    }
+
+    public List<ProdutoItem> getProdutoItemByProductName(String nome)
+    {
+        String SQL = "SELECT\n" +
+                "    i.caminho,\n" +
+                "    p.nome,\n" +
+                "    p.preco,\n" +
+                "    p.descricao,\n" +
+                "    p.genero,\n" +
+                "    p.categoria,\n" +
+                "    p.marca,\n" +
+                "    p.imagem_principal \n" +
+                "FROM TB_IMAGENS_PRODUTO i\n" +
+                "JOIN TB_PRODUTO p ON i.nome_produto = p.nome\n" +
+                "where i.nome_produto = ?;";
+
+        try {
+            Connection connection = database.GetConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, nome);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<ProdutoItem> produtos = new ArrayList<>();
+
+            while (resultSet.next()) {
+                ProdutoItem produto = new ProdutoItem();
+                produto.setNome(resultSet.getString("nome"));
+                produto.setPreco(resultSet.getDouble("preco"));
+                produto.setDescricao(resultSet.getString("descricao"));
+                produto.setGenero(resultSet.getString("genero"));
+                produto.setCategoria(resultSet.getString("categoria"));
+                produto.setMarca(resultSet.getString("marca"));
+                produto.setImagemPrincipal(resultSet.getString("imagem_principal"));
+                produto.setCaminhoImagem(resultSet.getString("caminho"));
+
+                produtos.add(produto);
+            }
+
+            System.out.println("Success in SELECT TB_PRODUTO and TB_IMAGENS_PRODUTO");
 
             connection.close();
 
