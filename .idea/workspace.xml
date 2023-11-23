@@ -8,13 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b20d6d-d397-47d3-84a6-69d25a147ec7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/ProdutoItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/produto/GetProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Carrinho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/CarrinhoItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/carrinho/CarrinhoComprasServelet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/carrinho/ExibirCarrinho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/ProdutoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/ProdutoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/front-end/produtos/tenis/Tenis Jordan MVP Masculino/Têenis Jordan MVP Masculino04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/produto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produto.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
