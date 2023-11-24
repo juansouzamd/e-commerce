@@ -1,40 +1,42 @@
 package br.com.ecommerce.model;
 
-import java.util.Date;
-
 public class Pedido {
     private int id;
     private String imagem;
     private String produto;
     private int quantidade;
     private double preco;
-    private double total;
+    private double subTotal;
     private String estimativaEntrega;
     private int idUsuario;
+
+    private String endereco;
 
 
     public Pedido() {
     }
 
-    public Pedido(int id, String imagem, String produto, int quantidade, double preco, double total, String estimativaEntrega, int idUsuario) {
+    public Pedido(int id, String imagem, String produto, int quantidade, double preco, double subTotal, String estimativaEntrega, int idUsuario, String endereco) {
         this.id = id;
         this.imagem = imagem;
         this.produto = produto;
         this.quantidade = quantidade;
         this.preco = preco;
-        this.total = total;
+        this.subTotal = subTotal;
         this.estimativaEntrega = estimativaEntrega;
         this.idUsuario = idUsuario;
+        this.endereco = endereco;
     }
 
-    public Pedido(String imagem, String produto, int quantidade, double preco, double total, String estimativaEntrega, int idUsuario) {
+    public Pedido(String imagem, String produto, int quantidade, double preco, double subTotal, String estimativaEntrega, int idUsuario, String endereco) {
         this.imagem = imagem;
         this.produto = produto;
         this.quantidade = quantidade;
         this.preco = preco;
-        this.total = total;
+        this.subTotal = subTotal;
         this.estimativaEntrega = estimativaEntrega;
         this.idUsuario = idUsuario;
+        this.endereco = endereco;
     }
 
     public int getId() {
@@ -77,12 +79,12 @@ public class Pedido {
         this.preco = preco;
     }
 
-    public double getTotal() {
-        return total;
+    public double getSubTotal() {
+        return subTotal;
     }
 
-    public void setTotal(double total) {
-        this.total = total;
+    public void setSubTotal(double subTotal) {
+        this.subTotal = subTotal;
     }
 
     public String getEstimativaEntrega() {
@@ -99,5 +101,13 @@ public class Pedido {
 
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

@@ -39,9 +39,9 @@ public class PedidoServelet extends HttpServlet {
         System.out.println("servelet POST pedido");
         int idUsuario = 6;
         String estimativa = "15 dias";
-
+        String endereco = "Rua tal";
         for (CarrinhoItem item : Carrinho.getCarrinhoItems()) {
-            Pedido pedido = new Pedido(item.getImagem(), item.getProduto(), item.getQuantidade(), item.getPreco(), item.getSubTotal(), estimativa, idUsuario);
+            Pedido pedido = new Pedido(item.getImagem(), item.getProduto(), item.getQuantidade(), item.getPreco(), item.getSubTotal(), estimativa, idUsuario, endereco);
             pedidoDao.savePedido(pedido);
         }
         Carrinho.limparCarrinho();

@@ -144,6 +144,84 @@
             </div>
             <!-- Fim Listar Enderecos -->
 
+           <!-- Tabela enderecos -->
+
+    <section id="cart" class="section-p1">
+
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Rua</td>
+                                <td>Bairro</td>
+                                <td>N°</td>
+                                <td>Cep</td>
+                                <td>atualizar</td>
+                                <td>Excluir</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <c:if test="${not empty enderecos}">
+                        <c:forEach var="endereco" items="${enderecos}">
+                            <tr>
+                                <td>${endereco.rua}</td>
+                                <td>${endereco.bairro} </td>
+                                <td>${endereco.numero}</td>
+                                <td>${endereco.cep} </td>
+                                <div class="botoes">
+                                <td>
+                                <a href="endereco.jsp?id=${endereco.id}&rua=${endereco.rua}&numero=${endereco.numero}&bairro=${endereco.bairro}&cep=${endereco.cep}&userId=${usuario.id}">
+                                <input type="submit"  class="btn" value="Atualizar" /></a>
+                                </td>
+                                <td>
+                                <form action="/excluir-endereco?id=${endereco.id}&userId=${usuario.id}"method="post">
+                                 <input type="submit" class="btn bot" value="Excluir" />
+                                 </form>
+                                </td>
+                                </div>
+                            </tr>
+                        </c:forEach>
+                        </c:if>
+                        </tbody>
+                    </table>
+                </section>
+           <!-- Fim tabela enderecos -->
+
+            <!-- Lista pedidos -->
+            <br>
+          <div class="bloco2">
+
+           <h3 class="h3">Pedidos cadastrados:</h3>
+            <section id="cart" class="section-p1">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Imagem</td>
+                                <td>Produto</td>
+                                <td>Preço</td>
+                                <td>Quantidade</td>
+                                <td>Subtotal</td>
+                                <td>Endereco de entrega</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <c:if test="${not empty pedidos}">
+                        <c:forEach var="item" items="${pedidos}">
+                            <tr>
+                                <td><img src="${item.imagem}" alt=""></td>
+                                <td>${item.produto}</td>
+                                <td>R$ ${item.preco} </td>
+                                <td>${item.quantidade}</td>
+                                <td>R$ ${item.subTotal} </td>
+                                <td>${item.endereco} </td>
+                            </tr>
+                        </c:forEach>
+                        </c:if>
+                        </tbody>
+                    </table>
+                </section>
+                </div>
+            <!-- Fim Lista pedidos -->
 
             <section id="newsletter" class="section-p1 section-m1">
                 <div class="newstext">

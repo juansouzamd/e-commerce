@@ -28,7 +28,7 @@ public class PedidoDao {
             preparedStatement.setString(2, pedido.getProduto());
             preparedStatement.setInt(3, pedido.getQuantidade());
             preparedStatement.setDouble(4, pedido.getPreco());
-            preparedStatement.setDouble(5, pedido.getTotal());
+            preparedStatement.setDouble(5, pedido.getSubTotal());
             preparedStatement.setString(6, pedido.getEstimativaEntrega());
             preparedStatement.setInt(7, pedido.getIdUsuario());
 
@@ -74,8 +74,9 @@ public class PedidoDao {
                 double total = resultSet.getDouble("total");
                 String estimativaEntrega = resultSet.getString("estimativa_entrega");
                 int idUsuario = resultSet.getInt("idUsuario");
+                String endereco = "Rua tal";
 
-                Pedido pedido = new Pedido(id, imagem, produto, quantidade, preco, total, estimativaEntrega, idUsuario);
+                Pedido pedido = new Pedido(id, imagem, produto, quantidade, preco, total, estimativaEntrega, idUsuario, endereco);
 
                 pedidos.add(pedido);
 
