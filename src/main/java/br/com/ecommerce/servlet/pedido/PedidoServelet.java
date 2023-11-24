@@ -38,10 +38,12 @@ public class PedidoServelet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("servelet POST pedido");
+        String enderecoSelecionado = request.getParameter("opcaoEndereco");
 
         int idUsuario = UsuarioLogado.getUserId();
         String estimativa = "15 dias";
-        String endereco = "Pendente botao pra selecionar a rua";
+        String endereco = enderecoSelecionado;
+
         for (CarrinhoItem item : Carrinho.getCarrinhoItems()) {
             Pedido pedido = new Pedido(item.getImagem(), item.getProduto(), item.getQuantidade(), item.getPreco(), item.getSubTotal(), estimativa, idUsuario, endereco);
             pedidoDao.savePedido(pedido);

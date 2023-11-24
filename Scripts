@@ -47,6 +47,29 @@ CREATE TABLE TB_IMAGENS_PRODUTO (
     FOREIGN KEY (nome_produto) REFERENCES TB_PRODUTO(nome)
 );
 
+
+CREATE TABLE TB_PEDIDO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    imagem VARCHAR(255),
+    produto VARCHAR(255) NOT NULL,
+    quantidade INT NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    total DECIMAL(10,2) NOT NULL,
+    estimativa_entrega VARCHAR(255),
+    idUsuario INT,
+    endereco TEXT,
+    FOREIGN KEY (idUsuario) REFERENCES TB_USUARIO(id)
+);
+
+CREATE TABLE TB_PEDIDO_ITEM (
+    id_produto INT,
+    id_pedido INT,
+    quantidade INT,
+    PRIMARY KEY (id_produto, id_pedido),
+    FOREIGN KEY (id_produto) REFERENCES TB_PRODUTO(id),
+    FOREIGN KEY (id_pedido) REFERENCES TB_PEDIDO(id)
+);
+
 CREATE TABLE TB_PEDIDO (
     id INT AUTO_INCREMENT PRIMARY KEY,
     imagem VARCHAR(255),

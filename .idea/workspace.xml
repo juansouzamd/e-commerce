@@ -9,10 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="77b20d6d-d397-47d3-84a6-69d25a147ec7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Carrinho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Carrinho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/pedido/PagamentoServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/pedido/PagamentoServelet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/checkout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/PedidoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/PedidoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/pedido/PedidoServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/pedido/PedidoServelet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/endereco.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/endereco.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

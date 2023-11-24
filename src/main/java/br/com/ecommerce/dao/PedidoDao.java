@@ -14,7 +14,7 @@ public class PedidoDao {
 
     public void savePedido(Pedido pedido)
     {
-        String SQL = "INSERT INTO TB_PEDIDO (imagem, produto, quantidade, preco, total, estimativa_entrega, idUsuario) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO TB_PEDIDO (imagem, produto, quantidade, preco, total, estimativa_entrega, idUsuario, endereco) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
 
@@ -31,6 +31,7 @@ public class PedidoDao {
             preparedStatement.setDouble(5, pedido.getSubTotal());
             preparedStatement.setString(6, pedido.getEstimativaEntrega());
             preparedStatement.setInt(7, pedido.getIdUsuario());
+            preparedStatement.setString(8, pedido.getEndereco());
 
             preparedStatement.execute();
 
@@ -74,7 +75,7 @@ public class PedidoDao {
                 double total = resultSet.getDouble("total");
                 String estimativaEntrega = resultSet.getString("estimativa_entrega");
                 int idUsuario = resultSet.getInt("idUsuario");
-                String endereco = "Rua tal";
+                String endereco = resultSet.getString("endereco");;
 
                 Pedido pedido = new Pedido(id, imagem, produto, quantidade, preco, total, estimativaEntrega, idUsuario, endereco);
 
