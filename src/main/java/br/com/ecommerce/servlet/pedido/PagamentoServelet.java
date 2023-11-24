@@ -22,13 +22,33 @@ public class PagamentoServelet extends HttpServlet {
             request.setAttribute("message", "Faça login para concluir a compra.");
             request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
         } else {
-            List<Endereco> enderecos = new EnderecoDao().getEnderecosByUserId(UsuarioLogado.getUserId());
 
-            request.setAttribute("enderecos", enderecos);
-            System.out.println("Endereco 1: " + enderecos.get(1).getRua() );
+            if(Carrinho.isEmpty())
+            {
+                request.setAttribute("message", "Carrinho Vazio.");
+                request.setAttribute("carrinhoItems", Carrinho.getCarrinhoItems());
+                request.setAttribute("valorTotal", Carrinho.getTotal());
+                request.getRequestDispatcher("/carrinho.jsp").forward(request, response);
+            }
+            else
+            {
+                List<Endereco> enderecos = new EnderecoDao().getEnderecosByUserId(UsuarioLogado.getUserId());
 
-            request.setAttribute("Teste", "tTESTAMDP = TESTADP");
-            request.getRequestDispatcher("checkout.jsp").forward(request, response);
+                if(enderecos.isEmpty()) {
+
+                    request.setAttribute("message", "É necessario cadastrar um endereco concluir a compra.");
+                    request.setAttribute("carrinhoItems", Carrinho.getCarrinhoItems());
+                    request.setAttribute("valorTotal", Carrinho.getTotal());
+                    request.getRequestDispatcher("/carrinho.jsp").forward(request, response);
+                }
+                else {
+                    request.setAttribute("message", "");
+                    request.setAttribute("enderecos", enderecos);
+                    request.getRequestDispatcher("checkout.jsp").forward(request, response);
+                }
+            }
+
+
         }
     }
 }

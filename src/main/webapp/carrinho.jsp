@@ -100,8 +100,11 @@
                         </table>
                         <button class="normal"><a href="/pagamento"
                                 style="text-decoration: none; color: white;">Comprar</a></button>
+
                     </div>
+
                 </div>
+                                    <span>${message}</span>
 
             </section>
 
