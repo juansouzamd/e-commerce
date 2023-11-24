@@ -78,8 +78,10 @@
                 <option>43</option>
                 <option>44</option>
             </select>
-            <input type="number" value="1">
+            <form action="/carrinho?produtoId=${produto.id}&preco=${produto.preco}" method="post">
+            <input type="number" value="1" name="quantidade" id="quantidade">
             <button class="normal">Adicionar ao carrinho</button>
+            </form>
             <h4>Detalhes do produto:</h4>
             <span>
                 ${produto.descricao}

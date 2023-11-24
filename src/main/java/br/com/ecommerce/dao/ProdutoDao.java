@@ -94,6 +94,7 @@ public class ProdutoDao {
     public List<ProdutoItem> getProdutoItemByProductName(String nome)
     {
         String SQL = "SELECT\n" +
+                "    p.id,\n" +
                 "    i.caminho,\n" +
                 "    p.nome,\n" +
                 "    p.preco,\n" +
@@ -124,6 +125,7 @@ public class ProdutoDao {
                 produto.setMarca(resultSet.getString("marca"));
                 produto.setImagemPrincipal(resultSet.getString("imagem_principal"));
                 produto.setCaminhoImagem(resultSet.getString("caminho"));
+                produto.setId(resultSet.getInt("id"));
 
                 produtos.add(produto);
             }
