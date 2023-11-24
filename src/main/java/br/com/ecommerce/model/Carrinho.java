@@ -69,6 +69,12 @@ public class Carrinho {
 
     public static void limparCarrinho()
     {
+        System.out.println("Limpando carrinho");
+        total = 0;
         carrinhoItems.clear();
+    }
+
+    public static boolean isEmpty(){
+        return carrinhoItems.isEmpty();
     }
 }

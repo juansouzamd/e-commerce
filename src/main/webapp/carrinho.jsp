@@ -102,7 +102,7 @@
                     <td><strong>R$ ${valorTotal}</strong></td>
                 </tr>
             </table>
-            <button class="normal">Comprar</button>
+            <button class="normal"><a href="/checkout.jsp"  style="text-decoration: none; color: white;">Comprar</a></button>
         </div>
     </section>
 

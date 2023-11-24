@@ -1,8 +1,10 @@
 package br.com.ecommerce.servlet.endereco;
 
 import br.com.ecommerce.dao.EnderecoDao;
+import br.com.ecommerce.dao.PedidoDao;
 import br.com.ecommerce.dao.UserDao;
 import br.com.ecommerce.model.Endereco;
+import br.com.ecommerce.model.Pedido;
 import br.com.ecommerce.model.User;
 
 import javax.servlet.ServletException;
@@ -27,8 +29,10 @@ public class GetEnderecos extends HttpServlet {
         req.setAttribute("usuario", usuario);
 
         List<Endereco> enderecos = new EnderecoDao().getEnderecosByUserId(userId);
+        List<Pedido> pedidos = new PedidoDao().getPedidosByUserId(userId);
 
         req.setAttribute("enderecos", enderecos);
+        req.setAttribute("pedidos", pedidos);
         req.getRequestDispatcher("usuario.jsp").forward(req, resp);
 
     }

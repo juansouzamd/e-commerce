@@ -8,16 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b20d6d-d397-47d3-84a6-69d25a147ec7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/carrinho/DeleteItemCarrinhoServelet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/pedido/PedidoServelet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/PedidoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/dao/PedidoDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Carrinho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Carrinho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/CarrinhoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/CarrinhoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/carrinho/CarrinhoComprasServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/carrinho/CarrinhoComprasServelet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/carrinho/ExibirCarrinho.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/produto/GetProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/produto/GetProduto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/cartao/SalvarCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/cartao/SalvarCartao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/endereco/GetEnderecos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/servlet/endereco/GetEnderecos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/carrinho.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/carrinho.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/produto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,5 +151,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ecommerce/model/Carrinho.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

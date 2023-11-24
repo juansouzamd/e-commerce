@@ -78,7 +78,7 @@
 
     </div>
 
-    <form action="/salvar-cartao" method="post">
+    <form action="/pedido" method="post">
         <div class="inputBox">
             <span><Nav>número do cartão</Nav></span>
             <input type="text" maxlength="16" class="card-number-input" name="numero-cartao" id="numero-cartao">

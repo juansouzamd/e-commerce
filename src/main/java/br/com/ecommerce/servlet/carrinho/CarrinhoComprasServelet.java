@@ -51,7 +51,6 @@ public class CarrinhoComprasServelet extends HttpServlet {
 
         }
 
-
         response.sendRedirect("/listar-produtos");
 
     }

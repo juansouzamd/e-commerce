@@ -32,6 +32,6 @@ public class SalvarCartao extends HttpServlet {
         CartaoDao dao = new CartaoDao();
         dao.createCartao(cartao);
 
-        response.sendRedirect("/index.jsp?id=" + userId);
+        response.sendRedirect("/paginaObrigado.jsp?id=" + userId);
     }
 }

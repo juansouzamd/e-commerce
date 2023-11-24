@@ -4,24 +4,36 @@ import java.util.Date;
 
 public class Pedido {
     private int id;
-    private String status;
-    private double valorTotal;
-    private boolean pago;
+    private String imagem;
+    private String produto;
+    private int quantidade;
+    private double preco;
+    private double total;
     private String estimativaEntrega;
-    private Date dataPedido;
     private int idUsuario;
 
+
     public Pedido() {
-        // Construtor padrão
     }
 
-    public Pedido(int id, String status, double valorTotal, boolean pago, String estimativaEntrega, Date dataPedido, int idUsuario) {
+    public Pedido(int id, String imagem, String produto, int quantidade, double preco, double total, String estimativaEntrega, int idUsuario) {
         this.id = id;
-        this.status = status;
-        this.valorTotal = valorTotal;
-        this.pago = pago;
+        this.imagem = imagem;
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.preco = preco;
+        this.total = total;
         this.estimativaEntrega = estimativaEntrega;
-        this.dataPedido = dataPedido;
+        this.idUsuario = idUsuario;
+    }
+
+    public Pedido(String imagem, String produto, int quantidade, double preco, double total, String estimativaEntrega, int idUsuario) {
+        this.imagem = imagem;
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.preco = preco;
+        this.total = total;
+        this.estimativaEntrega = estimativaEntrega;
         this.idUsuario = idUsuario;
     }
 
@@ -33,28 +45,44 @@ public class Pedido {
         this.id = id;
     }
 
-    public String getStatus() {
-        return status;
+    public String getImagem() {
+        return imagem;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 
-    public double getValorTotal() {
-        return valorTotal;
+    public String getProduto() {
+        return produto;
     }
 
-    public void setValorTotal(double valorTotal) {
-        this.valorTotal = valorTotal;
+    public void setProduto(String produto) {
+        this.produto = produto;
     }
 
-    public boolean isPago() {
-        return pago;
+    public int getQuantidade() {
+        return quantidade;
     }
 
-    public void setPago(boolean pago) {
-        this.pago = pago;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 
     public String getEstimativaEntrega() {
@@ -63,14 +91,6 @@ public class Pedido {
 
     public void setEstimativaEntrega(String estimativaEntrega) {
         this.estimativaEntrega = estimativaEntrega;
-    }
-
-    public Date getDataPedido() {
-        return dataPedido;
-    }
-
-    public void setDataPedido(Date dataPedido) {
-        this.dataPedido = dataPedido;
     }
 
     public int getIdUsuario() {
