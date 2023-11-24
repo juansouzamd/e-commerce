@@ -98,9 +98,7 @@
                                 <td><strong>R$ ${valorTotal}</strong></td>
                             </tr>
                         </table>
-                        <button class="normal"><a href="/pagamento"
-                                style="text-decoration: none; color: white;">Comprar</a></button>
-
+                        <a href="/pagamento" class="normal comp">Comprar</a>
                     </div>
 
                 </div>
