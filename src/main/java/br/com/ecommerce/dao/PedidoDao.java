@@ -20,7 +20,7 @@ public class PedidoDao {
 
             Connection connection = database.GetConnection();
 
-            System.out.println("Success in database connection");
+            System.out.println("Saving pedido");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 

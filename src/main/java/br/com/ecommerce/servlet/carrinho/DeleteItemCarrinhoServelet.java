@@ -25,6 +25,6 @@ public class DeleteItemCarrinhoServelet extends HttpServlet {
             Carrinho.removerItem(id,subTotal);
         }
 
-        response.sendRedirect("/carrinho");
+        response.sendRedirect("/exibir-carrinho");
     }
 }

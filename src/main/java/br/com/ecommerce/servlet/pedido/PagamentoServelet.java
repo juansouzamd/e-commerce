@@ -22,7 +22,6 @@ public class PagamentoServelet extends HttpServlet {
             request.setAttribute("message", "Faça login para concluir a compra.");
             request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
         } else {
-            Carrinho.limparCarrinho();
             response.sendRedirect("/checkout.jsp");
         }
     }

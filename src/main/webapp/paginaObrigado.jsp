@@ -47,7 +47,7 @@
             </section>
 
             <div class="botoes botaoObrigado">
-                <a href=""><input type="submit" class="btn bo" value="Ver meus pedidos"/></a>
+                <a href="/get-enderecos"><input type="submit" class="btn bo" value="Ver meus pedidos"/></a>
             </div>
 
             <section id="newsletter" class="section-p1 section-m1">

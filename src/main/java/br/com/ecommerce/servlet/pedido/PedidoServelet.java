@@ -47,7 +47,7 @@ public class PedidoServelet extends HttpServlet {
             pedidoDao.savePedido(pedido);
         }
         Carrinho.limparCarrinho();
-        response.sendRedirect("/listar-produtos");
+        response.sendRedirect("paginaObrigado.jsp");
 
     }
 }
