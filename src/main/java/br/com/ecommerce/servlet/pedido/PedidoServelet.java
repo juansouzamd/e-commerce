@@ -21,7 +21,7 @@ public class PedidoServelet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Servelet GET Pedidos");
-        int userId = 6;
+        int userId = UsuarioLogado.getUserId();
 
         User usuario = new UserDao().getUserById(userId);
         req.setAttribute("usuario", usuario);
@@ -32,14 +32,16 @@ public class PedidoServelet extends HttpServlet {
         req.setAttribute("enderecos", enderecos);
         req.setAttribute("pedidos", pedidos);
         req.getRequestDispatcher("usuario.jsp").forward(req, resp);
+        req.getRequestDispatcher("usuario.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("servelet POST pedido");
-        int idUsuario = 6;
+
+        int idUsuario = UsuarioLogado.getUserId();
         String estimativa = "15 dias";
-        String endereco = "Rua tal";
+        String endereco = "Pendente botao pra selecionar a rua";
         for (CarrinhoItem item : Carrinho.getCarrinhoItems()) {
             Pedido pedido = new Pedido(item.getImagem(), item.getProduto(), item.getQuantidade(), item.getPreco(), item.getSubTotal(), estimativa, idUsuario, endereco);
             pedidoDao.savePedido(pedido);

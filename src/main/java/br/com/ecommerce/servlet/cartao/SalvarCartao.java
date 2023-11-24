@@ -2,6 +2,7 @@ package br.com.ecommerce.servlet.cartao;
 
 import br.com.ecommerce.dao.CartaoDao;
 import br.com.ecommerce.model.Cartao;
+import br.com.ecommerce.model.UsuarioLogado;
 
 
 import javax.servlet.ServletException;
@@ -17,8 +18,7 @@ public class SalvarCartao extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("servelet salvar-cartao");
-        int userId = Integer.parseInt("6");
-        System.out.println("userId: " + userId);
+        int userId = UsuarioLogado.getUserId();
 
         String mes = request.getParameter("mes");
         String ano = request.getParameter("ano");

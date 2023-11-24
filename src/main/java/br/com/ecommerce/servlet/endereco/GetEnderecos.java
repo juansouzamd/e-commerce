@@ -23,8 +23,7 @@ public class GetEnderecos extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         System.out.println("Get-Enderecos Servelet");
-        int userId = UsuarioLogado.userId;
-        System.out.println("UserId: " + userId);
+        int userId = UsuarioLogado.getUserId();
         User usuario = new UserDao().getUserById(userId);
         req.setAttribute("usuario", usuario);
 

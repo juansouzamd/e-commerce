@@ -1,6 +1,7 @@
 package br.com.ecommerce.servlet.endereco;
 
 import br.com.ecommerce.dao.EnderecoDao;
+import br.com.ecommerce.model.UsuarioLogado;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,17 +17,13 @@ public class ExcluirEndereco extends HttpServlet {
 
         System.out.println("Servelet Excluir Endereco");
 
-        String userId = req.getParameter("userId");
-        req.setAttribute("userId", userId);
-
         String id = req.getParameter("id");
-        System.out.println("ParameterId: " + id);
         int enderecoId = Integer.parseInt(id);
         System.out.println("EnderecoId: " + enderecoId);
 
         new EnderecoDao().deleteEnderecoById((int)enderecoId);
 
-        resp.sendRedirect("/get-enderecos?id=" + userId);
+        resp.sendRedirect("/get-enderecos" );
 
     }
 }

@@ -16,9 +16,6 @@ public class AlterarEndereco extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Servelet Alterar endereco");
-        String userId = request.getParameter("userId");
-        request.setAttribute("userId", userId);
-        System.out.println("UserId: " + userId);
 
         EnderecoDao enderecoDao = new EnderecoDao();
         Endereco endereco = new Endereco();
@@ -30,6 +27,6 @@ public class AlterarEndereco extends HttpServlet {
         endereco.setNumero(request.getParameter("user-numero"));
 
         enderecoDao.updateEndereco(endereco);
-        response.sendRedirect("/get-enderecos?id=" + userId);
+        response.sendRedirect("/get-enderecos");
     }
 }

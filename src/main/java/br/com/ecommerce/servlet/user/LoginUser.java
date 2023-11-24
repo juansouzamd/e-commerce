@@ -18,7 +18,7 @@ public class LoginUser extends HttpServlet {
 
         if(UsuarioLogado.isLogado())
         {
-            resp.sendRedirect("/get-enderecos?id=" + UsuarioLogado.userId);
+            resp.sendRedirect("/get-enderecos");
 
         }
         else{
@@ -48,7 +48,7 @@ public class LoginUser extends HttpServlet {
             req.setAttribute("message", "");
 
             UsuarioLogado.conectarUsuario(user.getId());
-            resp.sendRedirect("index.jsp?id=" + user.getId());
+            resp.sendRedirect("/listar-produtos");
         } else {
             System.out.println("Usuario Invalido");
 

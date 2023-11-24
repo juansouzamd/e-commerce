@@ -16,13 +16,33 @@ import java.util.List;
 public class CarrinhoComprasServelet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("servelet GET carrinho");
 
-        req.setAttribute("carrinhoItems", Carrinho.getCarrinhoItems());
-        req.setAttribute("valorTotal", Carrinho.getTotal());
+        String quantidade = request.getParameter("quantidade");
+        String produtoId = request.getParameter("produtoId");
+        String produtoItem = request.getParameter("produto");
+        String preco = request.getParameter("preco");
+        String imagem = request.getParameter("imagem");
+        System.out.println("Quantidade: " + quantidade);
+        if(!produtoId.isEmpty())
+        {
+            int id = Integer.parseInt(produtoId);
+            int qtd = 1;
+            double valorPreco = Double.parseDouble(preco);
 
-        req.getRequestDispatcher("carrinho.jsp").forward(req, resp);
+            if(!quantidade.isEmpty())
+            {
+                qtd = Integer.parseInt(quantidade);
+            }
+
+            CarrinhoItem item = new CarrinhoItem(id, qtd, valorPreco, produtoItem, imagem);
+            Carrinho.adicionarItem(item);
+
+        }
+
+        response.sendRedirect("/exibir-carrinho");
+
     }
 
     @Override
@@ -34,7 +54,7 @@ public class CarrinhoComprasServelet extends HttpServlet {
         String produtoItem = request.getParameter("produto");
         String preco = request.getParameter("preco");
         String imagem = request.getParameter("imagem");
-
+        System.out.println("Quantidade: " + quantidade);
         if(!produtoId.isEmpty())
         {
             int id = Integer.parseInt(produtoId);
