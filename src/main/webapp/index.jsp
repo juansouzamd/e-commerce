@@ -24,7 +24,7 @@
                             <li><a href="/listar-produtos">Início</a></li>
                             <li><a href="sobre.jsp">Sobre</a></li>
                             <li><a href="contato.jsp">Contato</a></li>
-                            <li id="lg-bag"><a href="/carrinho"><i class="far fa-shopping-bag"></i></a></li>
+                            <li id="lg-bag"><a href="/exibir-carrinho"><i class="far fa-shopping-bag"></i></a></li>
                             <li id="lg-bag"><a href="/login?id=${param.id}"><i class="fas fa-user"></i></a></li>
                             <li id="lg-bag"><a href="/logout"><i class="fas fa-sign-out"></i></a></li>
                             <a href="#" id="close"><i class="far fa-times"></i></a>
@@ -91,7 +91,7 @@
                             <h4>R$ ${produto.preco}</h4>
                         </div>
                     </a>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <a href="/carrinho?produtoId=${produto.id}&preco=${produto.preco}&quantidade=${1}&imagem=${produto.imagemPrincipal}&produto=${produto.nome}"><i class="fal fa-shopping-cart cart"></i></a>
                 </div>
         </c:forEach>
         </div>
@@ -124,7 +124,7 @@
                                         <h4>R$ ${camiseta.preco}</h4>
                                     </div>
                                 </a>
-                                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                                <a href="/carrinho?produtoId=${camiseta.id}&preco=${camiseta.preco}&quantidade=${1}&imagem=${camiseta.imagemPrincipal}&produto=${camiseta.nome}"><i class="fal fa-shopping-cart cart"></i></a>
                             </div>
                     </c:forEach>
         </div>

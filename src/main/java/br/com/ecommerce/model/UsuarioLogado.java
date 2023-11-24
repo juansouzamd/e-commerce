@@ -1,8 +1,13 @@
 package br.com.ecommerce.model;
 
 public class UsuarioLogado {
-    public static int userId;
+
+    private static int userId;
     private static boolean logado;
+
+    public static int getUserId() {
+        return userId;
+    }
 
     public static boolean isLogado() {
         return logado;

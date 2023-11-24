@@ -2,6 +2,7 @@ package br.com.ecommerce.servlet.endereco;
 
 import br.com.ecommerce.dao.EnderecoDao;
 import br.com.ecommerce.model.Endereco;
+import br.com.ecommerce.model.UsuarioLogado;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,8 +17,7 @@ public class CriarEndereco extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("servelet criar endereco");
-        int userId = Integer.parseInt(request.getParameter("id"));
-        System.out.println("userId: " + userId);
+        int userId = UsuarioLogado.getUserId();
 
 
         EnderecoDao enderecoDao = new EnderecoDao();
@@ -29,6 +29,6 @@ public class CriarEndereco extends HttpServlet {
         endereco.setIdUsuario(userId);
         enderecoDao.createEndereco(endereco);
 
-        response.sendRedirect("/get-enderecos?id=" + userId);
+        response.sendRedirect("/get-enderecos");
     }
 }
