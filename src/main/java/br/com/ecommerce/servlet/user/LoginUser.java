@@ -2,6 +2,7 @@ package br.com.ecommerce.servlet.user;
 
 import br.com.ecommerce.dao.UserDao;
 import br.com.ecommerce.model.User;
+import br.com.ecommerce.model.UsuarioLogado;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,16 +16,13 @@ public class LoginUser extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("LoginUser doGet");
 
-        String userId = "";
-        userId = req.getParameter("id");
-        System.out.println("IDPARAMETER: " + userId);
-
-        if(userId == null || userId.isEmpty())
+        if(UsuarioLogado.isLogado())
         {
-            req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
+            resp.sendRedirect("/get-enderecos?id=" + UsuarioLogado.userId);
+
         }
         else{
-            resp.sendRedirect("/get-enderecos?id=" + userId);
+            req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
         }
 
 
@@ -47,12 +45,14 @@ public class LoginUser extends HttpServlet {
             User user = userDao.getUser(email,password);
 
             req.getSession().setAttribute("loggedUser", email);
+            req.setAttribute("message", "");
 
+            UsuarioLogado.conectarUsuario(user.getId());
             resp.sendRedirect("index.jsp?id=" + user.getId());
         } else {
             System.out.println("Usuario Invalido");
 
-            req.setAttribute("message", "Invalid credentials!");
+            req.setAttribute("message", "Credenciais inválidas!");
 
             req.getRequestDispatcher("paginaLogin.jsp").forward(req, resp);
 

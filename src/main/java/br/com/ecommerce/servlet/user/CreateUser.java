@@ -15,17 +15,25 @@ public class CreateUser extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserDao userDao = new UserDao();
-        User user = new User();
-        user.setNome(request.getParameter("user-name"));
-        user.setEmail(request.getParameter("user-email"));
-        user.setSenha(request.getParameter("user-senha"));
-        user.setCpf(request.getParameter("user-cpf"));
-        user.setDataNascimento(request.getParameter("user-cpf"));
-        user.setTelefone(request.getParameter("user-data_nasc"));
-        System.out.println("servelet create user");
-        userDao.createUser(user);
-        request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
+        try {
+            UserDao userDao = new UserDao();
+            User user = new User();
+            user.setNome(request.getParameter("user-name"));
+            user.setEmail(request.getParameter("user-email"));
+            user.setSenha(request.getParameter("user-senha"));
+            user.setCpf(request.getParameter("user-cpf"));
+            user.setDataNascimento(request.getParameter("user-cpf"));
+            user.setTelefone(request.getParameter("user-data_nasc"));
+            System.out.println("servelet create user");
+            userDao.createUser(user);
+            request.setAttribute("message", "");
+            request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
+        }
+        catch (Exception ex)
+        {
+            request.setAttribute("message", "Não foi possivel criar o usuario!");
+            request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
 
+        }
     }
 }

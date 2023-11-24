@@ -28,6 +28,7 @@
               <input type="password" placeholder="Senha" name="user-senha" id="user-senha"/>
             </div>
             <input type="submit" class="btn" value="Entrar" />
+                          <span>${message}</span>
           </form>
            <!-- Formulário de Criação de Conta -->
           <form action="/create-user" class="sign-up-form" method="post">

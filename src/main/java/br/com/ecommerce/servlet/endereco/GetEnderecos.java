@@ -6,6 +6,7 @@ import br.com.ecommerce.dao.UserDao;
 import br.com.ecommerce.model.Endereco;
 import br.com.ecommerce.model.Pedido;
 import br.com.ecommerce.model.User;
+import br.com.ecommerce.model.UsuarioLogado;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,9 +23,8 @@ public class GetEnderecos extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         System.out.println("Get-Enderecos Servelet");
-        int userId = Integer.parseInt(req.getParameter("id"));
-        System.out.println("IDPARAMETER: " + userId);
-
+        int userId = UsuarioLogado.userId;
+        System.out.println("UserId: " + userId);
         User usuario = new UserDao().getUserById(userId);
         req.setAttribute("usuario", usuario);
 
