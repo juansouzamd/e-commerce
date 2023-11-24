@@ -65,7 +65,7 @@
 
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Cep" name="user-cep" id="user-cep" />
+                            <input type="text" placeholder="Cep" name="user-cep" id="user-cep"  />
                         </div>
                         <input hidden type="text" placeholder="id" name="user-id" id="user-id" value="${usuario.id}" />
 
@@ -143,48 +143,6 @@
 
             </div>
             <!-- Fim Listar Enderecos -->
-
-           <!-- Tabela enderecos -->
-
-    <section id="cart" class="section-p1">
-
-                    <table width="100%">
-                        <thead>
-                            <tr>
-                                <td>Rua</td>
-                                <td>Bairro</td>
-                                <td>N°</td>
-                                <td>Cep</td>
-                                <td>atualizar</td>
-                                <td>Excluir</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <c:if test="${not empty enderecos}">
-                        <c:forEach var="endereco" items="${enderecos}">
-                            <tr>
-                                <td>${endereco.rua}</td>
-                                <td>${endereco.bairro} </td>
-                                <td>${endereco.numero}</td>
-                                <td>${endereco.cep} </td>
-                                <div class="botoes">
-                                <td>
-                                <a href="endereco.jsp?id=${endereco.id}&rua=${endereco.rua}&numero=${endereco.numero}&bairro=${endereco.bairro}&cep=${endereco.cep}&userId=${usuario.id}">
-                                <input type="submit"  class="btn" value="Atualizar" /></a>
-                                </td>
-                                <td>
-                                <form action="/excluir-endereco?id=${endereco.id}&userId=${usuario.id}"method="post">
-                                 <input type="submit" class="btn bot" value="Excluir" />
-                                 </form>
-                                </td>
-                                </div>
-                            </tr>
-                        </c:forEach>
-                        </c:if>
-                        </tbody>
-                    </table>
-                </section>
-           <!-- Fim tabela enderecos -->
 
             <!-- Lista pedidos -->
             <br>

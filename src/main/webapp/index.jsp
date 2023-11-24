@@ -109,7 +109,7 @@
         <div class="pro-container">
               <c:forEach var="camiseta" items="${camisetas}">
                             <div class="pro">
-                                <a href="produto-item?produto=${produto.nome}" class="decoration">
+                                <a href="produto-item?produto=${camiseta.nome}" class="decoration">
                                     <img src="${camiseta.imagemPrincipal}"
                                         alt="">
                                     <div class="des">
