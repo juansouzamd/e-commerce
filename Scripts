@@ -61,15 +61,6 @@ CREATE TABLE TB_PEDIDO (
     FOREIGN KEY (idUsuario) REFERENCES TB_USUARIO(id)
 );
 
-CREATE TABLE TB_PEDIDO_ITEM (
-    id_produto INT,
-    id_pedido INT,
-    quantidade INT,
-    PRIMARY KEY (id_produto, id_pedido),
-    FOREIGN KEY (id_produto) REFERENCES TB_PRODUTO(id),
-    FOREIGN KEY (id_pedido) REFERENCES TB_PEDIDO(id)
-);
-
 CREATE TABLE TB_PEDIDO (
     id INT AUTO_INCREMENT PRIMARY KEY,
     imagem VARCHAR(255),
