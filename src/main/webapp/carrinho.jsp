@@ -19,26 +19,26 @@
         <body>
 
             <section id="header">
-                <a href="/listar-produtos"><img src="assets/img/front-end/logo.png" class="logo" alt=""></a>
+                                <a href="/listar-produtos"><img src="assets/img/front-end/logo.png" class="logo" alt=""></a>
 
-                <div>
-                    <ul id="navbar">
-                        <li><a href="/listar-produtos">Início</a></li>
-                        <li><a href="sobre.jsp">Sobre</a></li>
-                        <li><a href="contato.jsp">Contato</a></li>
-                        <li id="lg-bag"><a href="/carrinho"><i class="far fa-shopping-bag"></i></a></li>
-                        <li id="lg-bag"><a href="/login?id=${param.id}"><i class="fas fa-user"></i></a></li>
-                        <li id="lg-bag"><a href="/logout"><i class="fas fa-sign-out"></i></a></li>
-                        <a href="#" id="close"><i class="far fa-times"></i></a>
-                    </ul>
-                </div>
-                <div id="mobile">
-                    <a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a>
-                    <a href="/login"><i class="fas fa-user"></i></a>
-                    <a href="/logout"><i class="fas fa-sign-out"></i></a>
-                    <a href="/logout"><i id="bar" class="fas fa-outdent"></i></a>
-                </div>
-            </section>
+                                <div>
+                                    <ul id="navbar">
+                                        <li><a href="/listar-produtos">Início</a></li>
+                                        <li><a href="sobre.jsp">Sobre</a></li>
+                                        <li><a href="contato.jsp">Contato</a></li>
+                                        <li id="lg-bag"><a href="/exibir-carrinho"><i class="far fa-shopping-bag"></i></a></li>
+                                        <li id="lg-bag"><a href="/login?id=${param.id}"><i class="fas fa-user"></i></a></li>
+                                        <li id="lg-bag"><a href="/logout"><i class="fas fa-sign-out"></i></a></li>
+                                        <a href="#" id="close"><i class="far fa-times"></i></a>
+                                    </ul>
+                                </div>
+                                <div id="mobile">
+                                    <a href="carrinho.jsp"><i class="far fa-shopping-bag"></i></a>
+                                    <a href="/login"><i class="fas fa-user"></i></a>
+                                    <a href="/logout"><i class="fas fa-sign-out"></i></a>
+                                    <a href="/logout"><i id="bar" class="fas fa-outdent"></i></a>
+                                </div>
+                            </section>
 
             <section id="page-header" class="about-header">
 
