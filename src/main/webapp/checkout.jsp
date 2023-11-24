@@ -129,9 +129,8 @@
         </div>
 
         <section class="enderecos">
+          <h3 class="h33">Selecione o endereço de entrega:</h3>
          <c:forEach var="endereco" items="${enderecos}">
-                <h3 class="h33">Selecione o endereço de entrega:</h3>
-
                 <div class="endereco-option">
                     <input type="radio" id="opcaoEndereco" name="opcaoEndereco" value="${endereco.rua} ${endereco.numero}" required class="rua">
                     <label class="end">${endereco.rua}, ${endereco.numero}</label>
