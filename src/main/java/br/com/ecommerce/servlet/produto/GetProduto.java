@@ -27,7 +27,6 @@ public class GetProduto extends HttpServlet {
         String productName = req.getParameter("produto");
 
         List<ProdutoItem> produtoItems = new ProdutoDao().getProdutoItemByProductName(productName);
-        produtoItems.forEach(a -> System.out.println(a.getNome()));
         req.setAttribute("produtoItems", produtoItems);
         req.setAttribute("produto", produtoItems.get(1));
         req.getRequestDispatcher("produto.jsp").forward(req, resp);

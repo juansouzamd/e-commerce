@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +43,6 @@
 
         <h2>#carrinho</h2>
         <p>adicione seu cupon e tenha até 70% de desconto!</p>
-
     </section>
 
     <section id="cart" class="section-p1">
@@ -60,30 +59,20 @@
             </thead>
 
             <tbody>
+            <c:if test="${not empty carrinhoItems}">
+            <c:forEach var="item" items="${carrinhoItems}">
                 <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="assets/img/front-end/produtos/tênis/Air Jordan 1 Retro High OG GS Lucky Green/Air Jordan 1 Retro High01.png" alt=""></td>
-                    <td>Air Jordan 1 Retro High</td>
-                    <td>R$999,99</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>R$999,99</td>
+                    <form action="/delete-item-carrinho?produtoId=${item.idProduto}&subTotal=${item.subTotal}" method="post">
+                    <td><input type="submit" class="far fa-times-circle"/></td>
+                    </form>
+                    <td><img src="${item.imagem}" alt=""></td>
+                    <td>${item.produto}</td>
+                    <td>R$ ${item.preco} </td>
+                    <td>${item.quantidade}</td>
+                    <td>R$ ${item.subTotal} </td>
                 </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="assets/img/front-end/produtos/camisetas/Regata NBA Golden State Warriors/Regata NBA Golden State Warriors01.webp" alt=""></td>
-                    <td>Regata NBA Golden State Warriors</td>
-                    <td>R$699,99</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>R$699,99</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="/assets/img/front-end/produtos/tênis/Tênis Nike LeBron 20 Masculino/Tênis Nike LeBron 20 Masculino01.png" alt=""></td>
-                    <td>Tênis Nike LeBron 20</td>
-                    <td>R$1299,99</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>R$1299,99</td>
-                </tr>
+            </c:forEach>
+            </c:if>
             </tbody>
         </table>
     </section>
@@ -102,7 +91,7 @@
             <table>
                 <tr>
                     <td>Carrinho Subtotal</td>
-                    <td>R$ 2.999,97</td>
+                    <td>R$ ${valor-total}</td>
                 </tr>
                 <tr>
                     <td>Frete</td>
@@ -110,7 +99,7 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>R$ 2.999,97</strong></td>
+                    <td><strong>R$ ${valorTotal}</strong></td>
                 </tr>
             </table>
             <button class="normal">Comprar</button>

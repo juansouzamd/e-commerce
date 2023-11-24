@@ -24,7 +24,7 @@
                             <li><a href="index.jsp?id=${param.id}">Início</a></li>
                             <li><a href="sobre.jsp?id=${param.id}">Sobre</a></li>
                             <li><a href="contato.jsp?id=${param.id}">Contato</a></li>
-                            <li id="lg-bag"><a href="carrinho.jsp?id=${param.id}"><i class="far fa-shopping-bag"></i></a></li>
+                            <li id="lg-bag"><a href="/carrinho"><i class="far fa-shopping-bag"></i></a></li>
                             <li id="lg-bag"><a href="/login?id=${param.id}"><i class="fas fa-user"></i></a></li>
                             <li id="lg-bag"><a href="/index.jsp"><i class="fas fa-sign-out"></i></a></li>
                             <a href="#" id="close"><i class="far fa-times"></i></a>

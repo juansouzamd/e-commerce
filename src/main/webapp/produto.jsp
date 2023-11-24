@@ -80,6 +80,8 @@
             </select>
             <form action="/carrinho?produtoId=${produto.id}&preco=${produto.preco}" method="post">
             <input type="number" value="1" name="quantidade" id="quantidade">
+            <input hidden value="${produtoItems.get(1).caminhoImagem}" name="imagem" id="imagem">
+            <input hidden value="${produto.nome}" name="produto" id="produto">
             <button class="normal">Adicionar ao carrinho</button>
             </form>
             <h4>Detalhes do produto:</h4>

@@ -1,46 +1,60 @@
 package br.com.ecommerce.model;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
-    private static List<CarrinhoItem> carrinho = new ArrayList<>();
+    public static void setCarrinhoItems(List<CarrinhoItem> carrinhoItems) {
+        Carrinho.carrinhoItems = carrinhoItems;
+    }
+
+    private static List<CarrinhoItem> carrinhoItems = new ArrayList<>();
     private static double total;
 
-    public static List<CarrinhoItem> getCarrinho() {
-        return carrinho;
+    public static double getTotal() {
+        BigDecimal bd = new BigDecimal(total).setScale(2, RoundingMode.HALF_UP);
+
+        // Obtém o número arredondado como double
+        double numeroArredondado = bd.doubleValue();
+        return numeroArredondado;
+    }
+
+    public static void setTotal(double total) {
+        Carrinho.total = total;
+    }
+    public static List<CarrinhoItem> getCarrinhoItems() {
+        return carrinhoItems;
     }
 
     public static void adicionarItem(CarrinhoItem item) {
 
-        for (CarrinhoItem existingItem : carrinho) {
+        for (CarrinhoItem existingItem : carrinhoItems) {
+
             if (existingItem.getIdProduto() == item.getIdProduto()) {
                 // Se o produto já estiver no carrinho, apenas atualizar a quantidade
                 existingItem.setQuantidade(existingItem.getQuantidade() + item.getQuantidade());
-                atualizarTotal(item.getQuantidade(), item.getPreco());
-                return; // Sair do método após atualizar a quantidade
+
+                existingItem.setSubTotal(existingItem.getPreco() * existingItem.getQuantidade());
+
+               atualizarTotal(item.getQuantidade(), item.getPreco());
+                return;
             }
 
         }
-        System.out.println("Atualizar fora do foreach");
+        item.setSubTotal(item.getPreco() * item.getQuantidade());
         atualizarTotal(item.getQuantidade(), item.getPreco());
 
-        carrinho.add(item);
+        carrinhoItems.add(item);
     }
 
-//        private void atualizarTotal()
-//        {
-//            for (CarrinhoItem item : carrinho) {
-//                if(item.getQuantidade() > 1)
-//                {
-//                    total += item.getPreco() * item.getQuantidade();
-//                }
-//                else {
-//                    total += item.getPreco();
-//                }
-//            }
-//        }
-
+    public static void removerItem(int id, double subTotal)
+    {
+        carrinhoItems.removeIf(item -> item.getIdProduto() == id);
+        total -= subTotal;
+    }
     private static void atualizarTotal(int qtd, double preco)
     {
         total += preco * qtd;
@@ -49,12 +63,12 @@ public class Carrinho {
 
     public static void logItens()
     {
-        carrinho.forEach(c -> System.out.println("Itens carrinho, produtoId: " + c.getIdProduto() + " quantidade: " + c.getQuantidade() + " Preco:" + c.getPreco()));
+        carrinhoItems.forEach(c -> System.out.println("Itens carrinho, produtoId: " + c.getIdProduto() + " quantidade: " + c.getQuantidade() + " Preco:" + c.getPreco()));
         System.out.println("Preco Total: " + total);
     }
 
     public static void limparCarrinho()
     {
-        carrinho.clear();
+        carrinhoItems.clear();
     }
 }

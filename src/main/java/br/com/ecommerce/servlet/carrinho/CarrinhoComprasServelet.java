@@ -9,18 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet("/carrinho")
 public class CarrinhoComprasServelet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("servelet GET carrinho");
 
-        Carrinho.getCarrinho().forEach(c -> System.out.println("Itens carrinho: " + c.getIdProduto() + " quantidade: " + c.getQuantidade()));
+        req.setAttribute("carrinhoItems", Carrinho.getCarrinhoItems());
+        req.setAttribute("valorTotal", Carrinho.getTotal());
 
-        response.sendRedirect(request.getContextPath() + "/index.jsp/listar-produtos");
-
+        req.getRequestDispatcher("carrinho.jsp").forward(req, resp);
     }
 
     @Override
@@ -31,25 +33,22 @@ public class CarrinhoComprasServelet extends HttpServlet {
         String produtoId = request.getParameter("produtoId");
         String produtoItem = request.getParameter("produto");
         String preco = request.getParameter("preco");
+        String imagem = request.getParameter("imagem");
+
         if(!produtoId.isEmpty())
         {
-            System.out.println("Produto is not empty");
-
             int id = Integer.parseInt(produtoId);
             int qtd = 1;
             double valorPreco = Double.parseDouble(preco);
 
             if(!quantidade.isEmpty())
             {
-                System.out.println("quantidade is not empty");
                 qtd = Integer.parseInt(quantidade);
             }
 
-            CarrinhoItem item = new CarrinhoItem(id, qtd, valorPreco);
+            CarrinhoItem item = new CarrinhoItem(id, qtd, valorPreco, produtoItem, imagem);
             Carrinho.adicionarItem(item);
 
-            Carrinho.logItens();
-            System.out.println();
         }
 
 
