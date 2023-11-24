@@ -61,18 +61,6 @@ CREATE TABLE TB_PEDIDO (
     FOREIGN KEY (idUsuario) REFERENCES TB_USUARIO(id)
 );
 
-CREATE TABLE TB_PEDIDO (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    imagem VARCHAR(255),
-    produto VARCHAR(255) NOT NULL,
-    quantidade INT NOT NULL,
-    preco DECIMAL(10,2) NOT NULL,
-    total DECIMAL(10,2) NOT NULL,
-    estimativa_entrega VARCHAR(255),
-    idUsuario INT,
-    endereco TEXT,
-    FOREIGN KEY (idUsuario) REFERENCES TB_USUARIO(id)
-);
 
 
 
