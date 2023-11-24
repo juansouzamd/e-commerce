@@ -1,9 +1,7 @@
 package br.com.ecommerce.servlet.pedido;
 
-import br.com.ecommerce.model.Carrinho;
-import br.com.ecommerce.model.CarrinhoItem;
-import br.com.ecommerce.model.Pedido;
-import br.com.ecommerce.model.UsuarioLogado;
+import br.com.ecommerce.dao.EnderecoDao;
+import br.com.ecommerce.model.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet("/pagamento")
 public class PagamentoServelet extends HttpServlet {
@@ -22,7 +22,13 @@ public class PagamentoServelet extends HttpServlet {
             request.setAttribute("message", "Faça login para concluir a compra.");
             request.getRequestDispatcher("paginaLogin.jsp").forward(request, response);
         } else {
-            response.sendRedirect("/checkout.jsp");
+            List<Endereco> enderecos = new EnderecoDao().getEnderecosByUserId(UsuarioLogado.getUserId());
+
+            request.setAttribute("enderecos", enderecos);
+            System.out.println("Endereco 1: " + enderecos.get(1).getRua() );
+
+            request.setAttribute("Teste", "tTESTAMDP = TESTADP");
+            request.getRequestDispatcher("checkout.jsp").forward(request, response);
         }
     }
 }

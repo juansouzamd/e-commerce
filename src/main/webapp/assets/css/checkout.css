@@ -24,7 +24,7 @@
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
     padding: 20px;
-    width: 600px;
+    width: 700px;
     padding-top: 160px;
 }
 
@@ -176,6 +176,26 @@
     background-color: #EEEEEE;
 }
 
-.h1 {
+.enderecos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
 
+.h33 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rua {
+    margin-top: 1rem;
+}
+
+.end {
+    font-size: 1rem;
 }

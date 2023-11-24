@@ -7,12 +7,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
+    private static List<CarrinhoItem> carrinhoItems = new ArrayList<>();
+    private static double total;
+    private static String endereco;
+
+    public static String getEndereco() {
+        return endereco;
+    }
+
+    public static void setEndereco(String endereco) {
+        Carrinho.endereco = endereco;
+    }
+
+
     public static void setCarrinhoItems(List<CarrinhoItem> carrinhoItems) {
         Carrinho.carrinhoItems = carrinhoItems;
     }
-
-    private static List<CarrinhoItem> carrinhoItems = new ArrayList<>();
-    private static double total;
 
     public static double getTotal() {
         BigDecimal bd = new BigDecimal(total).setScale(2, RoundingMode.HALF_UP);

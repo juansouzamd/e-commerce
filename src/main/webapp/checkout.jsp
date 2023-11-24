@@ -126,6 +126,19 @@
                 <input type="text" maxlength="3" class="cvv-input" name="cvv" id="cvv" required>
             </div>
         </div>
+
+        <section class="enderecos">
+         <c:forEach var="endereco" items="${enderecos}">
+                <h3 class="h33">Selecione o endereço de entrega:</h3>
+
+                <div class="endereco-option">
+                    <input type="radio" id="opcaoEndereco" name="opcaoEndereco" value="${endereco.rua} ${endereco.numero}" required class="rua">
+                    <label class="end">${endereco.rua}, ${endereco.numero}</label>
+                </div>
+        </c:forEach>
+
+        </section>
+
         <input type="submit" value="comprar" class="submit-btn">
     </form>
 
