@@ -87,7 +87,7 @@
                         <table>
                             <tr>
                                 <td>Carrinho Subtotal</td>
-                                <td>R$ ${valor-total}</td>
+                                <td>R$ ${valorTotal}</td>
                             </tr>
                             <tr>
                                 <td>Frete</td>
@@ -98,7 +98,7 @@
                                 <td><strong>R$ ${valorTotal}</strong></td>
                             </tr>
                         </table>
-                        <button class="normal"><a href="/checkout.jsp"
+                        <button class="normal"><a href="/pagamento"
                                 style="text-decoration: none; color: white;">Comprar</a></button>
                     </div>
                 </div>
